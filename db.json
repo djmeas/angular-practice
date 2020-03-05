@@ -1,0 +1,31 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Street Fighter II",
+      "category": [
+        "fighting",
+        "versus",
+        "2-d"
+      ],
+      "players": "1-2"
+    },
+    {
+      "id": 2,
+      "title": "Sonic The Hedgehog",
+      "category": [
+        "platformer",
+        "2-d"
+      ],
+      "players": "1"
+    },
+    {
+      "id": 3,
+      "title": "Beatmania IIDX",
+      "category": [
+        "rhythm"
+      ],
+      "players": "1-2"
+    }
+  ]
+}

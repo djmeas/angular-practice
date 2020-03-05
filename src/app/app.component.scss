@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+$gray: #e8e9f4;
+$pink: #e9425e;
+$blue: #22c3d8;
+$darkBlue: #090b3a;
+$black: #050505;
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: $gray;
+  padding: 10px;
+  a {
+    background-color: $pink;
+    padding: 5px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    &:hover {
+      background-color: lightslategray;
+      transition: 0.3s;
+    }
+  }
+}
