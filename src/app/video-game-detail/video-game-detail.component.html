@@ -1,0 +1,11 @@
+<div *ngIf="videoGame">
+  <div>{{ videoGame.title }}</div>
+  <div>Players: {{ videoGame.players }}</div>
+  <div>
+    <ul>
+      <li *ngFor="let category of videoGame.category">
+        {{ category }}
+      </li>
+    </ul>
+  </div>
+</div>

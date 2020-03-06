@@ -7,3 +7,11 @@ export class GetVideoGames {
     console.log('GetVideoGames action...');
   }
 }
+
+export class GetVideoGame {
+  static readonly type = '[VideoGame] Get One';
+
+  constructor(public id: number) {
+    console.log('Get a specific video game action...');
+  }
+}

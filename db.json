@@ -3,29 +3,38 @@
     {
       "id": 1,
       "title": "Street Fighter II",
-      "category": [
-        "fighting",
-        "versus",
-        "2-d"
-      ],
+      "category": ["Fighting", "Versus", "2-D"],
       "players": "1-2"
     },
     {
       "id": 2,
       "title": "Sonic The Hedgehog",
-      "category": [
-        "platformer",
-        "2-d"
-      ],
+      "category": ["Platformer", "2-D"],
       "players": "1"
     },
     {
       "id": 3,
       "title": "Beatmania IIDX",
-      "category": [
-        "rhythm"
-      ],
+      "category": ["rhythm"],
       "players": "1-2"
+    },
+    {
+      "id": 4,
+      "title": "Final Fantasy XII",
+      "category": ["JPRG", "3-D"],
+      "players": "1"
+    },
+    {
+      "id": 5,
+      "title": "Terraria",
+      "category": ["Sandbox", "2-D"],
+      "players": "1"
+    },
+    {
+      "id": 6,
+      "title": "Jackbox",
+      "category": ["Party", "Trivia", "Mini-games"],
+      "players": "1-8"
     }
   ]
 }

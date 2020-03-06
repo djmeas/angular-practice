@@ -23,6 +23,11 @@ nav {
     text-decoration: none;
     color: white;
     transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    &:nth-child(n + 2) {
+      flex: 5;
+    }
     &:hover {
       background-color: lightslategray;
       transition: 0.3s;

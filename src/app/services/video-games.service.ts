@@ -12,4 +12,9 @@ export class VideoGamesService {
     console.log('Service: Making get request...');
     return this.http.get<VideoGame[]>('http://localhost:3000/games/');
   }
+
+  getVideoGame(id: number) {
+    console.log('Service: Making get request...');
+    return this.http.get<VideoGame>(`http://localhost:3000/games/${id}`);
+  }
 }

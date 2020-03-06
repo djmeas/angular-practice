@@ -10,9 +10,10 @@ import { NgxsModule } from '@ngxs/store';
 import { VideoGameState } from './state/videoGame.state';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { VideoGameDetailComponent } from './video-game-detail/video-game-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, ClickerComponent, VideoGamesComponent],
+  declarations: [AppComponent, ClickerComponent, VideoGamesComponent, VideoGameDetailComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
