@@ -56,24 +56,66 @@
           "name": "Angular",
           "experience": {
             "years": 5,
-            "level": "Expert"
+            "level": 5
           }
         },
         {
           "name": "JavaScript",
           "experience": {
             "years": 11,
-            "level": "Expert"
+            "level": 5
           }
         },
         {
           "name": "SQL",
           "experience": {
             "years": 3,
-            "level": "Intermediate"
+            "level": 3
+          }
+        },
+        {
+          "name": "HTML",
+          "experience": {
+            "years": 12,
+            "level": 5
+          }
+        },
+        {
+          "name": "PHP",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "UI/UX",
+          "experience": {
+            "years": 8,
+            "level": 4
+          }
+        },
+        {
+          "name": "Java",
+          "experience": {
+            "years": 2,
+            "level": 2
+          }
+        },
+        {
+          "name": "ML",
+          "experience": {
+            "years": 0,
+            "level": 0
           }
         }
-      ]
+      ],
+      "assignment": {
+        "current": {
+          "client": "NBC Universal",
+          "project": "The Board",
+          "assigned": "2020-01-15"
+        }
+      }
     },
     {
       "id": 2,
@@ -93,24 +135,619 @@
           "name": "Angular",
           "experience": {
             "years": 0.5,
-            "level": "Beginner"
+            "level": 2
           }
         },
         {
           "name": "JavaScript",
           "experience": {
             "years": 3,
-            "level": "Intermediate"
+            "level": 3
           }
         },
         {
           "name": "SQL",
           "experience": {
             "years": 5,
-            "level": "Advanced"
+            "level": 4
+          }
+        },
+        {
+          "name": "HTML",
+          "experience": {
+            "years": 5,
+            "level": 4
+          }
+        },
+        {
+          "name": "PHP",
+          "experience": {
+            "years": 5,
+            "level": 5
+          }
+        },
+        {
+          "name": "UI/UX",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "Java",
+          "experience": {
+            "years": 0.5,
+            "level": 2
+          }
+        },
+        {
+          "name": "ML",
+          "experience": {
+            "years": 0,
+            "level": 0
           }
         }
-      ]
+      ],
+      "assignment": {
+        "current": {
+          "client": "Union Bank",
+          "project": "CSX",
+          "assigned": "2001-11-15"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "details": {
+        "firstName": "Mohammad",
+        "lastName": "Yazdani",
+        "address": {
+          "street1": "3456 East Bank Ave",
+          "street2": "Apt 499",
+          "city": "Signal Hill",
+          "state": "CA",
+          "postalCode": 90876
+        }
+      },
+      "skills": [
+        {
+          "name": "Angular",
+          "experience": {
+            "years": 0.25,
+            "level": 2
+          }
+        },
+        {
+          "name": "JavaScript",
+          "experience": {
+            "years": 1,
+            "level": 2
+          }
+        },
+        {
+          "name": "SQL",
+          "experience": {
+            "years": 15,
+            "level": 5
+          }
+        },
+        {
+          "name": "HTML",
+          "experience": {
+            "years": 3,
+            "level": 3
+          }
+        },
+        {
+          "name": "PHP",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "UI/UX",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "Java",
+          "experience": {
+            "years": 15,
+            "level": 5
+          }
+        },
+        {
+          "name": "ML",
+          "experience": {
+            "years": 1,
+            "level": 5
+          }
+        }
+      ],
+      "assignment": {
+        "current": {
+          "client": "Avid",
+          "project": "Damage Detection",
+          "assigned": "2020-01-17"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "details": {
+        "firstName": "Tam",
+        "lastName": "Benedetta",
+        "address": {
+          "street1": "3456 East Bank Ave",
+          "street2": "Apt 499",
+          "city": "San Diego",
+          "state": "CA",
+          "postalCode": 90876
+        }
+      },
+      "skills": [
+        {
+          "name": "PM",
+          "experience": {
+            "years": 10,
+            "level": 5
+          }
+        },
+        {
+          "name": "Agile",
+          "experience": {
+            "years": 8,
+            "level": 5
+          }
+        },
+        {
+          "name": "Excel",
+          "experience": {
+            "years": 8,
+            "level": 4
+          }
+        },
+        {
+          "name": "HTML",
+          "experience": {
+            "years": 3,
+            "level": 2
+          }
+        },
+        {
+          "name": "PHP",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "UI/UX",
+          "experience": {
+            "years": 2,
+            "level": 3
+          }
+        },
+        {
+          "name": "Java",
+          "experience": {
+            "years": 0.5,
+            "level": 2
+          }
+        },
+        {
+          "name": "ML",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        }
+      ],
+      "assignment": {
+        "current": {
+          "client": "Daylight",
+          "project": "Agent Dashboard",
+          "assigned": "2020-02-21"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "details": {
+        "firstName": "Miguel",
+        "lastName": "Vasquez",
+        "address": {
+          "street1": "3456 East Bank Ave",
+          "street2": "Apt 499",
+          "city": "Culver City",
+          "state": "CA",
+          "postalCode": 90876
+        }
+      },
+      "skills": [
+        {
+          "name": "Angular",
+          "experience": {
+            "years": 3,
+            "level": 4
+          }
+        },
+        {
+          "name": "JavaScript",
+          "experience": {
+            "years": 6,
+            "level": 5
+          }
+        },
+        {
+          "name": "SQL",
+          "experience": {
+            "years": 1,
+            "level": 2
+          }
+        },
+        {
+          "name": "HTML",
+          "experience": {
+            "years": 6,
+            "level": 5
+          }
+        },
+        {
+          "name": "PHP",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "UI/UX",
+          "experience": {
+            "years": 2,
+            "level": 3
+          }
+        },
+        {
+          "name": "Java",
+          "experience": {
+            "years": 0.5,
+            "level": 2
+          }
+        },
+        {
+          "name": "ML",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        }
+      ],
+      "assignment": {
+        "current": {
+          "client": "Daylight",
+          "project": "Agent Dashboard",
+          "assigned": "2020-02-21"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "details": {
+        "firstName": "Chet",
+        "lastName": "Ly",
+        "address": {
+          "street1": "123 West River Rd",
+          "street2": "Apt A",
+          "city": "Long Beach",
+          "state": "CA",
+          "postalCode": 49872
+        }
+      },
+      "skills": [
+        {
+          "name": "Angular",
+          "experience": {
+            "years": 5,
+            "level": 5
+          }
+        },
+        {
+          "name": "JavaScript",
+          "experience": {
+            "years": 11,
+            "level": 5
+          }
+        },
+        {
+          "name": "SQL",
+          "experience": {
+            "years": 3,
+            "level": 3
+          }
+        },
+        {
+          "name": "HTML",
+          "experience": {
+            "years": 12,
+            "level": 5
+          }
+        },
+        {
+          "name": "PHP",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "UI/UX",
+          "experience": {
+            "years": 8,
+            "level": 4
+          }
+        },
+        {
+          "name": "Java",
+          "experience": {
+            "years": 2,
+            "level": 2
+          }
+        },
+        {
+          "name": "ML",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        }
+      ],
+      "assignment": {
+        "current": {
+          "client": "NBC Universal",
+          "project": "The Board",
+          "assigned": "2020-01-15"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "details": {
+        "firstName": "Harry",
+        "lastName": "Meas",
+        "address": {
+          "street1": "3456 East Bank Ave",
+          "street2": "Apt 499",
+          "city": "Signal Hill",
+          "state": "CA",
+          "postalCode": 90876
+        }
+      },
+      "skills": [
+        {
+          "name": "Angular",
+          "experience": {
+            "years": 0.5,
+            "level": 2
+          }
+        },
+        {
+          "name": "JavaScript",
+          "experience": {
+            "years": 3,
+            "level": 3
+          }
+        },
+        {
+          "name": "SQL",
+          "experience": {
+            "years": 5,
+            "level": 4
+          }
+        },
+        {
+          "name": "HTML",
+          "experience": {
+            "years": 5,
+            "level": 4
+          }
+        },
+        {
+          "name": "PHP",
+          "experience": {
+            "years": 5,
+            "level": 4
+          }
+        },
+        {
+          "name": "UI/UX",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "Java",
+          "experience": {
+            "years": 0.5,
+            "level": 2
+          }
+        },
+        {
+          "name": "ML",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        }
+      ],
+      "assignment": {
+        "current": {
+          "client": "Union Bank",
+          "project": "CSX",
+          "assigned": "2001-11-15"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "details": {
+        "firstName": "Mohammad",
+        "lastName": "Yazdani",
+        "address": {
+          "street1": "3456 East Bank Ave",
+          "street2": "Apt 499",
+          "city": "Signal Hill",
+          "state": "CA",
+          "postalCode": 90876
+        }
+      },
+      "skills": [
+        {
+          "name": "Angular",
+          "experience": {
+            "years": 0.25,
+            "level": 2
+          }
+        },
+        {
+          "name": "JavaScript",
+          "experience": {
+            "years": 1,
+            "level": 2
+          }
+        },
+        {
+          "name": "SQL",
+          "experience": {
+            "years": 15,
+            "level": 5
+          }
+        },
+        {
+          "name": "HTML",
+          "experience": {
+            "years": 3,
+            "level": 3
+          }
+        },
+        {
+          "name": "PHP",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "UI/UX",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "Java",
+          "experience": {
+            "years": 15,
+            "level": 5
+          }
+        },
+        {
+          "name": "ML",
+          "experience": {
+            "years": 1,
+            "level": 5
+          }
+        }
+      ],
+      "assignment": {
+        "current": {
+          "client": "Avid",
+          "project": "Damange Detection",
+          "assigned": "2020-01-17"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "details": {
+        "firstName": "Miguel",
+        "lastName": "Vasquez",
+        "address": {
+          "street1": "3456 East Bank Ave",
+          "street2": "Apt 499",
+          "city": "Culver City",
+          "state": "CA",
+          "postalCode": 90876
+        }
+      },
+      "skills": [
+        {
+          "name": "Angular",
+          "experience": {
+            "years": 3,
+            "level": 4
+          }
+        },
+        {
+          "name": "JavaScript",
+          "experience": {
+            "years": 6,
+            "level": 5
+          }
+        },
+        {
+          "name": "SQL",
+          "experience": {
+            "years": 1,
+            "level": 2
+          }
+        },
+        {
+          "name": "HTML",
+          "experience": {
+            "years": 6,
+            "level": 5
+          }
+        },
+        {
+          "name": "PHP",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        },
+        {
+          "name": "UI/UX",
+          "experience": {
+            "years": 2,
+            "level": 3
+          }
+        },
+        {
+          "name": "Java",
+          "experience": {
+            "years": 0.5,
+            "level": 2
+          }
+        },
+        {
+          "name": "ML",
+          "experience": {
+            "years": 0,
+            "level": 0
+          }
+        }
+      ],
+      "assignment": {
+        "current": {
+          "client": "Daylight",
+          "project": "Agent Dashboard",
+          "assigned": "2020-02-21"
+        }
+      }
     }
   ]
 }

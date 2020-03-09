@@ -1,0 +1,88 @@
+@import '../../colors.scss';
+
+.card-body {
+  .employee-header {
+    display: flex;
+    h1 {
+      font-size: 1.75em;
+      margin-top: 0px;
+      flex: 3;
+    }
+    .status {
+      flex: 1;
+      text-align: right;
+      .fa {
+        color: lightgreen;
+      }
+    }
+  }
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  min-height: 300px;
+  background-color: white;
+  color: $oaGray;
+  &.scale-up {
+    transition: 0.5s;
+    &:hover {
+      transition: 0.5s;
+      transform: scale(1.02, 1.02);
+      box-shadow: 0px 3px 3px 0px #9aacbd;
+    }
+  }
+  .location {
+    margin-bottom: 10px;
+  }
+  .skills-container {
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    padding: 15px;
+    background-color: #f0fff9;
+    .skill-detail {
+      display: flex;
+      .skill-label {
+        flex: 1;
+        text-align: right;
+      }
+      .skill-gauge {
+        flex: 3;
+        padding-left: 10px;
+        .gauge {
+          padding-left: 10px;
+          border: 1px solid white;
+          color: white;
+          &.expert {
+            width: 100%;
+            background-color: $oaOrange;
+          }
+          &.advanced {
+            width: 80%;
+            background-color: $oaOrange;
+            opacity: 0.9;
+          }
+          &.intermediate {
+            width: 50%;
+            background-color: $oaOrange;
+            opacity: 0.8;
+          }
+          &.novice {
+            width: 35%;
+            background-color: $oaOrange;
+            opacity: 0.7;
+          }
+          &.beginner {
+            width: 20%;
+            background-color: $oaOrange;
+            opacity: 0.6;
+          }
+          &.none {
+            width: 0%;
+            background-color: $oaOrange;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-
-$gray: #e8e9f4;
-$pink: #e9425e;
-$blue: #22c3d8;
-$darkBlue: #090b3a;
-$black: #050505;
+@import 'colors.scss';
 
 * {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-color: $gray;
 }
 
 nav {
   display: flex;
   background-color: $gray;
   padding: 10px;
+  margin-bottom: 40px;
   a {
-    background-color: $pink;
+    background-color: $oaOrange;
     padding: 5px;
     flex: 1;
     margin: 0 10px;

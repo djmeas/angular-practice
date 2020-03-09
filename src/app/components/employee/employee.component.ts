@@ -15,6 +15,18 @@ export class EmployeeComponent implements OnInit {
 
   @Select(EmployeeState.getAllEmployees) employees: Observable<Employee[]>;
 
+  public generateSkill(level: number) {
+    const skillNames = [
+      'None',
+      'Beginner',
+      'Novice',
+      'Intermediate',
+      'Advanced',
+      'Expert'
+    ];
+    return skillNames[level];
+  }
+
   ngOnInit(): void {
     this.store.dispatch(new GetEmployees());
   }
