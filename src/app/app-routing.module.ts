@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { VideoGamesComponent } from './video-games/video-games.component';
-import { VideoGameDetailComponent } from './video-game-detail/video-game-detail.component';
+import { VideoGamesComponent } from './components/video-games/video-games.component';
+import { VideoGameDetailComponent } from './components/video-game-detail/video-game-detail.component';
+import { EmployeeComponent } from './components/employee/employee.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'video-games/:id',
     component: VideoGameDetailComponent
+  },
+  {
+    path: 'employees',
+    component: EmployeeComponent
   }
 ];
 

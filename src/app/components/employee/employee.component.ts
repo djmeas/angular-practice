@@ -1,0 +1,21 @@
+import { Component, OnInit } from '@angular/core';
+import { EmployeeState } from '../../state/employee.state';
+import { Select, Store } from '@ngxs/store';
+import { GetEmployees } from '../../actions/employee/employee.actions';
+import { Observable } from 'rxjs';
+import { Employee } from '../../model/employee.model';
+
+@Component({
+  selector: 'app-employee',
+  templateUrl: './employee.component.html',
+  styleUrls: ['./employee.component.scss']
+})
+export class EmployeeComponent implements OnInit {
+  constructor(private store: Store) {}
+
+  @Select(EmployeeState.getAllEmployees) employees: Observable<Employee[]>;
+
+  ngOnInit(): void {
+    this.store.dispatch(new GetEmployees());
+  }
+}

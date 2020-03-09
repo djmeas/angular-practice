@@ -1,0 +1,19 @@
+@import '../../colors.scss';
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.video-game-card {
+  .card-body {
+    h1 {
+      font-size: 1.75em;
+    }
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 300px;
+    background-color: $gray;
+    color: $blue;
+  }
+}

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { VideoGameState } from '../state/videoGame.state';
+import { VideoGameState } from '../../state/videoGame.state';
 import { Select, Store } from '@ngxs/store';
-import { GetVideoGames } from '../actions/videoGame.actions';
+import { GetVideoGames } from '../../actions/videoGame.actions';
 import { Observable } from 'rxjs';
-import { VideoGame } from '../model/videoGame.model';
+import { VideoGame } from '../../model/videoGame.model';
 
 @Component({
   selector: 'app-video-games',

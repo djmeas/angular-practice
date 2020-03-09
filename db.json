@@ -36,5 +36,81 @@
       "category": ["Party", "Trivia", "Mini-games"],
       "players": "1-8"
     }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "details": {
+        "firstName": "Chet",
+        "lastName": "Ly",
+        "address": {
+          "street1": "123 West River Rd",
+          "street2": "Apt A",
+          "city": "Long Beach",
+          "state": "CA",
+          "postalCode": 49872
+        }
+      },
+      "skills": [
+        {
+          "name": "Angular",
+          "experience": {
+            "years": 5,
+            "level": "Expert"
+          }
+        },
+        {
+          "name": "JavaScript",
+          "experience": {
+            "years": 11,
+            "level": "Expert"
+          }
+        },
+        {
+          "name": "SQL",
+          "experience": {
+            "years": 3,
+            "level": "Intermediate"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "details": {
+        "firstName": "Harry",
+        "lastName": "Meas",
+        "address": {
+          "street1": "3456 East Bank Ave",
+          "street2": "Apt 499",
+          "city": "Signal Hill",
+          "state": "CA",
+          "postalCode": 90876
+        }
+      },
+      "skills": [
+        {
+          "name": "Angular",
+          "experience": {
+            "years": 0.5,
+            "level": "Beginner"
+          }
+        },
+        {
+          "name": "JavaScript",
+          "experience": {
+            "years": 3,
+            "level": "Intermediate"
+          }
+        },
+        {
+          "name": "SQL",
+          "experience": {
+            "years": 5,
+            "level": "Advanced"
+          }
+        }
+      ]
+    }
   ]
 }
