@@ -12,8 +12,9 @@ body {
     display: flex;
     .sidebar {
       flex: 1;
+      position: fixed;
       background-color: #bfc0cb;
-      height: auto;
+      height: 100%;
       a {
         font-size: 2em;
         color: white;
@@ -38,6 +39,7 @@ body {
     main {
       flex: 5;
       padding: 40px;
+      margin-left: 270px;
     }
   }
 }

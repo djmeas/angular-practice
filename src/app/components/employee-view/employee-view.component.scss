@@ -21,10 +21,25 @@
   }
   .employee-image {
     width: 100%;
+    border-radius: 5px;
   }
   &.employee-sidebar {
     h1 {
+      font-size: 2em;
       margin: 15px 0 10px;
+      text-align: center;
+    }
+    .sub-header {
+      display: flex;
+      .location {
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid lightgray;
+      }
+      .role {
+        flex: 1;
+        text-align: center;
+      }
     }
   }
   .contact-icons {

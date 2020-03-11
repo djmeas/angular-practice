@@ -8,18 +8,22 @@
           alt="Profile Image"
         />
         <div>
-          <h1>
-            <a class="employee-link-container" [routerLink]="employee.id"> </a>
-          </h1>
           <h1 class="employee-name">
             {{ employee.details.firstName }}
             {{ employee.details.lastName }}
           </h1>
+          <hr />
         </div>
-        <div class="location">
-          {{ employee.details.address.city }},
-          {{ employee.details.address.state }}
+        <div class="sub-header">
+          <div class="location">
+            {{ employee.details.address.city }},
+            {{ employee.details.address.state }}
+          </div>
+          <div class="role">
+            {{ employee.title }}
+          </div>
         </div>
+
         <hr />
         <div class="employee-description">
           <p>
@@ -138,7 +142,10 @@
                     {{ history.start }} &mdash; {{ history.end }}
                   </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-3">
+                  <img src="/assets/client_logos/union_bank.svg" alt="" />
+                </div>
+                <div class="col-lg-6">
                   <p>
                     Phasellus bibendum arcu molestie justo aliquet, ut hendrerit
                     massa dapibus. Ut elit lacus, dapibus sit amet ligula in,

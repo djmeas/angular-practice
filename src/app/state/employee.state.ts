@@ -65,22 +65,4 @@ export class EmployeeState {
       })
     );
   }
-
-  // @Action(GetVideoGame)
-  // getVideoGame(
-  //   { getState, setState }: StateContext<VideoGameStateModel>,
-  //   { id }
-  // ) {
-  //   console.log('videoGame.state getVideoGame()...');
-  //   return this.videoGamesService.getVideoGame(id).pipe(
-  //     tap(result => {
-  //       console.log('setting state for video game detail: ', result);
-  //       const state = getState();
-  //       setState({
-  //         ...state,
-  //         viewDetail: result
-  //       });
-  //     })
-  //   );
-  // }
 }

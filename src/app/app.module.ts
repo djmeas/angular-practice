@@ -18,6 +18,7 @@ import { EmployeeViewComponent } from './components/employee-view/employee-view.
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NgxGraphModule } from '@swimlane/ngx-graph';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     VideoGamesComponent,
     VideoGameDetailComponent,
     EmployeeComponent,
-    EmployeeViewComponent
+    EmployeeViewComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
