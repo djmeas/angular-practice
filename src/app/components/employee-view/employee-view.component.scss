@@ -5,16 +5,28 @@
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 30px;
-  min-height: 300px;
   background-color: white;
   color: $oaGray;
+  h1 {
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex: 3;
+  }
+  hr {
+    margin-top: 10px;
+  }
+  .employee-image {
+    width: 100%;
+  }
+  &.employee-sidebar {
+    h1 {
+      margin: 15px 0 10px;
+    }
+  }
   .employee-header {
     display: flex;
-    h1 {
-      font-size: 1.75em;
-      margin-top: 0px;
-      flex: 3;
-    }
+
     .status {
       flex: 1;
       text-align: right;
@@ -35,23 +47,12 @@
       }
     }
   }
-  .sub-header {
-    display: flex;
-    .location,
-    .title {
-      flex: 1;
-    }
-    .location {
-      text-align: right;
-    }
-  }
   &.scale-up {
     transition: 0.5s;
     &:hover {
-      transition: 0.5s;
-      background-color: #fff9f1;
-      box-shadow: 0px 3px 3px 0px #9aacbd;
-      cursor: default;
+      // transition: 0.5s;
+      // transform: scale(1.02, 1.02);
+      // box-shadow: 0px 3px 3px 0px #9aacbd;
     }
   }
   .assignment {
@@ -70,7 +71,7 @@
   }
   .employee-allocation {
     display: flex;
-    margin-top: 10px;
+
     .allocation {
       .allocation-percentage {
         display: none;
@@ -120,7 +121,6 @@
     border: 1px solid lightgray;
     padding: 15px;
     background-color: #f0fff9;
-    min-height: 160px;
     .skill-detail {
       display: flex;
       .skill-label {
@@ -128,13 +128,13 @@
         text-align: right;
       }
       .skill-gauge {
-        flex: 4.5;
+        flex: 10;
         padding-left: 10px;
+        height: 30px;
         .gauge {
           padding-left: 10px;
           border: 1px solid white;
           color: white;
-          font-size: 0.95em;
           &.expert {
             width: 100%;
             background-color: $oaOrange;
@@ -145,17 +145,17 @@
             opacity: 0.9;
           }
           &.intermediate {
-            width: 65%;
+            width: 50%;
             background-color: $oaOrange;
             opacity: 0.8;
           }
           &.novice {
-            width: 40%;
+            width: 35%;
             background-color: $oaOrange;
             opacity: 0.7;
           }
           &.beginner {
-            width: 30%;
+            width: 20%;
             background-color: $oaOrange;
             opacity: 0.6;
           }
@@ -164,16 +164,12 @@
             background-color: $oaOrange;
             opacity: 0.5;
           }
-          .years-experience {
-            display: none;
-          }
-          &:hover {
-            .years-experience {
-              display: inline;
-            }
-          }
         }
       }
     }
   }
+}
+
+.tree-map-container {
+  background-color: white;
 }

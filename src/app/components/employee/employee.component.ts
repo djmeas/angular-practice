@@ -17,7 +17,7 @@ export class EmployeeComponent implements OnInit {
 
   public generateSkill(level: number) {
     const skillNames = [
-      'None',
+      '',
       'Beginner',
       'Novice',
       'Intermediate',

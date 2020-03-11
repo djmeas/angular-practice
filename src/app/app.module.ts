@@ -13,6 +13,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { VideoGameDetailComponent } from './components/video-game-detail/video-game-detail.component';
 import { EmployeeComponent } from './components/employee/employee.component';
+import { EmployeeViewComponent } from './components/employee-view/employee-view.component';
+
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { NgxGraphModule } from '@swimlane/ngx-graph';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,14 +25,18 @@ import { EmployeeComponent } from './components/employee/employee.component';
     ClickerComponent,
     VideoGamesComponent,
     VideoGameDetailComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    EmployeeViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxsModule.forRoot([VideoGameState, EmployeeState]),
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxChartsModule,
+    NgxGraphModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

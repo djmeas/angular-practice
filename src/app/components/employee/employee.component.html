@@ -1,29 +1,51 @@
-<div class="container">
+<div class="">
   <div class="row">
     <div *ngFor="let employee of employees | async" class="col-lg-4">
       <div class="card-body scale-up">
         <div class="employee-header">
           <h1>
-            <a [routerLink]="employee.id">
-              <i class="fa fa-user"></i> {{ employee.details.firstName }}
-              {{ employee.details.lastName }}
+            <a class="employee-link-container" [routerLink]="employee.id">
+              <img
+                class="employee-image"
+                [src]="'assets/' + employee.details.profilePicture"
+                alt="Profile Image"
+              />
+              <span class="employee-name">
+                {{ employee.details.firstName }}
+                {{ employee.details.lastName }}
+              </span>
             </a>
           </h1>
           <div class="status"><i class="fa fa-circle"></i> Assigned</div>
         </div>
-        <div class="location">
-          {{ employee.details.address.city }},
-          {{ employee.details.address.state }}
+        <div class="sub-header">
+          <div class="title">
+            {{ employee.title }}
+          </div>
+          <div class="location">
+            {{ employee.details.address.city }},
+            {{ employee.details.address.state }}
+          </div>
         </div>
+
         <div class="assignment">
-          <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-          {{ employee.assignment.current.client }} -
-          {{ employee.assignment.current.project }}
+          <div class="employee-allocation">
+            <div
+              class="allocation scale-up"
+              *ngFor="let assignment of employee.assignments.current"
+              [style]="'flex:' + assignment.allocation"
+            >
+              <span class="client">{{ assignment.client }}</span>
+              <span class="allocation-percentage">
+                {{ assignment.allocation }}%
+              </span>
+            </div>
+          </div>
         </div>
 
         <div class="skills-container">
           <div *ngFor="let skill of employee.skills">
-            <div class="skill-detail">
+            <div *ngIf="skill.experience.years" class="skill-detail">
               <div class="skill-label">
                 {{ skill.name }}
               </div>
@@ -36,6 +58,9 @@
                   [title]="skill.experience.years + ' years experience'"
                 >
                   {{ generateSkill(skill.experience.level) }}
+                  <span class="years-experience">
+                    ({{ skill.experience.years }} years)
+                  </span>
                 </div>
               </div>
             </div>

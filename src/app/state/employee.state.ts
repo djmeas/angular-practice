@@ -1,7 +1,10 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { Injectable } from '@angular/core';
 import { Employee } from '../model/employee.model';
-import { GetEmployees } from '../actions/employee/employee.actions';
+import {
+  GetEmployees,
+  GetEmployee
+} from '../actions/employee/employee.actions';
 import { EmployeeService } from '../services/employee/employee.service';
 import { tap } from 'rxjs/operators';
 
@@ -42,6 +45,22 @@ export class EmployeeState {
         setState({
           ...state,
           list: result
+        });
+      })
+    );
+  }
+
+  @Action(GetEmployee)
+  getEmployee(
+    { getState, setState }: StateContext<EmployeeStateModel>,
+    { id }
+  ) {
+    return this.employeeService.getEmployee(id).pipe(
+      tap(result => {
+        const state = getState();
+        setState({
+          ...state,
+          view: result
         });
       })
     );

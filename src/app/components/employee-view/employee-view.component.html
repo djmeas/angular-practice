@@ -1,0 +1,104 @@
+<div class="content-wrapper">
+  <div class="row">
+    <div *ngIf="employee" class="col-lg-3">
+      <div class="card-body employee-sidebar scale-up">
+        <img
+          class="employee-image"
+          [src]="'assets/' + employee.details.profilePicture"
+          alt="Profile Image"
+        />
+        <div>
+          <h1>
+            <a class="employee-link-container" [routerLink]="employee.id"> </a>
+          </h1>
+          <h1 class="employee-name">
+            {{ employee.details.firstName }}
+            {{ employee.details.lastName }}
+          </h1>
+        </div>
+        <div class="location">
+          {{ employee.details.address.city }},
+          {{ employee.details.address.state }}
+        </div>
+        <hr />
+        <div class="employee-description">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed
+            mollis lorem. Nullam sagittis ut mauris ac blandit. Morbi massa
+            nulla, interdum sit amet sagittis vitae, sodales sed libero. Donec
+            diam mi, pellentesque ac leo sit amet, euismod sollicitudin tellus.
+            Nam euismod tincidunt arcu. Suspendisse ligula ligula, accumsan
+            vitae enim eu, gravida efficitur sapien. Sed vel velit vel mauris
+            mollis elementum.
+          </p>
+          <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Sed hendrerit scelerisque ante, non
+            ullamcorper purus vehicula eu. Sed lacinia erat a velit aliquet,
+            dignissim rhoncus sem mattis. Pellentesque varius purus ut leo
+            feugiat, id maximus enim ultricies. Fusce suscipit nulla laoreet
+            tortor ultrices tincidunt. In in egestas lacus.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="employee" class="col-lg-9 employee-content">
+      <div class="card-body scale-up">
+        <h1>Project Allocation</h1>
+        <hr />
+        <div class="assignment">
+          <div class="employee-allocation">
+            <div
+              class="allocation scale-up"
+              *ngFor="let assignment of employee.assignments.current"
+              [style]="'flex:' + assignment.allocation"
+            >
+              <span class="">
+                {{ assignment.client }} {{ assignment.allocation }}%
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body scale-up">
+        <h1>Expertise</h1>
+        <hr />
+        <div class="skills-container">
+          <div *ngFor="let skill of employee.skills">
+            <div class="skill-detail">
+              <div class="skill-label">
+                {{ skill.name }}
+              </div>
+              <div class="skill-gauge">
+                <div
+                  class="gauge"
+                  [ngClass]="
+                    generateSkill(skill.experience.level).toLowerCase()
+                  "
+                  [title]="skill.experience.years + ' years experience'"
+                >
+                  {{ generateSkill(skill.experience.level) }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body scale-up">
+        <h1>Years of Experience</h1>
+        <hr />
+        <div class="tree-map-container" style="height: 400px;">
+          <ngx-charts-tree-map
+            class="tree-map"
+            [view]="view"
+            [scheme]="colorScheme"
+            [results]="treeMapData"
+            [gradient]="gradient"
+            [animations]="animations"
+          >
+          </ngx-charts-tree-map>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

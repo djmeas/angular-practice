@@ -23,14 +23,53 @@
     />
   </head>
   <body>
-    <nav>
+    <!-- <nav>
       <a routerLink="/">Home</a>
       <a routerLink="/employees">Employees</a>
       <a routerLink="/skills">Skills</a>
       <a routerLink="/dashboard">My Dashboard</a>
-    </nav>
-
-    <router-outlet></router-outlet>
+    </nav> -->
+    <div class="page-container">
+      <div class="sidebar">
+        <a routerLink="/employees">
+          <div class="sidebar-link logo">
+            <img
+              class="logo-mark"
+              src="/assets/logo-mark.svg"
+              alt="Optimity Advisors mark"
+            />
+            <img
+              class="logo-text"
+              src="/assets/logo.svg"
+              alt="Optimity Advisors logo"
+            />
+          </div>
+        </a>
+        <a routerLink="/employees">
+          <div class="sidebar-link">
+            Home
+          </div>
+        </a>
+        <a routerLink="/employees">
+          <div class="sidebar-link">
+            Employees
+          </div>
+        </a>
+        <a routerLink="/skills">
+          <div class="sidebar-link">
+            Skills
+          </div>
+        </a>
+        <a routerLink="/skills">
+          <div class="sidebar-link">
+            Projects
+          </div>
+        </a>
+      </div>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </div>
 
     <!-- Latest compiled and minified JavaScript -->
     <script

@@ -12,4 +12,9 @@ export class EmployeeService {
     console.log('Service: Making get request...');
     return this.http.get<Employee[]>('http://localhost:3000/employees/');
   }
+
+  getEmployee(id: number) {
+    console.log('Service: Making get request...');
+    return this.http.get<Employee>(`http://localhost:3000/employees/${id}`);
+  }
 }

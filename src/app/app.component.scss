@@ -7,6 +7,39 @@
 
 body {
   background-color: $gray;
+
+  .page-container {
+    display: flex;
+    .sidebar {
+      flex: 1;
+      background-color: #bfc0cb;
+      height: auto;
+      a {
+        font-size: 2em;
+        color: white;
+        .sidebar-link {
+          padding: 10px 20px;
+          border-bottom: 1px solid white;
+          &.logo {
+            background-color: white;
+            display: flex;
+            .logo-mark {
+              flex: 1;
+              width: 80px;
+            }
+            .logo-text {
+              flex: 10;
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+    main {
+      flex: 5;
+      padding: 40px;
+    }
+  }
 }
 
 nav {
