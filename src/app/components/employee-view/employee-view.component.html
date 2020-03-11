@@ -1,6 +1,6 @@
-<div class="content-wrapper">
+<div *ngIf="employee" class="content-wrapper">
   <div class="row">
-    <div *ngIf="employee" class="col-lg-3">
+    <div class="col-lg-3">
       <div class="card-body employee-sidebar scale-up">
         <img
           class="employee-image"
@@ -39,64 +39,138 @@
             feugiat, id maximus enim ultricies. Fusce suscipit nulla laoreet
             tortor ultrices tincidunt. In in egestas lacus.
           </p>
-        </div>
-      </div>
-    </div>
-    <div *ngIf="employee" class="col-lg-9 employee-content">
-      <div class="card-body scale-up">
-        <h1>Project Allocation</h1>
-        <hr />
-        <div class="assignment">
-          <div class="employee-allocation">
-            <div
-              class="allocation scale-up"
-              *ngFor="let assignment of employee.assignments.current"
-              [style]="'flex:' + assignment.allocation"
-            >
-              <span class="">
-                {{ assignment.client }} {{ assignment.allocation }}%
-              </span>
+          <hr />
+          <div class="contact-icons">
+            <div class="icon">
+              <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; Phone
+            </div>
+            <div class="icon">
+              <i class="fa fa-envelope-open-o" aria-hidden="true"></i> &nbsp;
+              E-Mail
+            </div>
+            <div class="icon">
+              <i class="fa fa-comment-o" aria-hidden="true"></i> Message
             </div>
           </div>
         </div>
       </div>
-      <div class="card-body scale-up">
-        <h1>Expertise</h1>
-        <hr />
-        <div class="skills-container">
-          <div *ngFor="let skill of employee.skills">
-            <div class="skill-detail">
-              <div class="skill-label">
-                {{ skill.name }}
-              </div>
-              <div class="skill-gauge">
+    </div>
+    <div *ngIf="employee" class="col-lg-9 employee-content">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card-body scale-up">
+            <h1>Project Allocation</h1>
+            <hr />
+            <div class="assignment">
+              <div class="employee-allocation">
                 <div
-                  class="gauge"
-                  [ngClass]="
-                    generateSkill(skill.experience.level).toLowerCase()
-                  "
-                  [title]="skill.experience.years + ' years experience'"
+                  class="allocation scale-up"
+                  *ngFor="let assignment of employee.assignments.current"
+                  [style]="'flex:' + assignment.allocation"
                 >
-                  {{ generateSkill(skill.experience.level) }}
+                  <span class="">
+                    {{ assignment.client }} {{ assignment.allocation }}%
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="card-body scale-up">
-        <h1>Years of Experience</h1>
-        <hr />
-        <div class="tree-map-container" style="height: 400px;">
-          <ngx-charts-tree-map
-            class="tree-map"
-            [view]="view"
-            [scheme]="colorScheme"
-            [results]="treeMapData"
-            [gradient]="gradient"
-            [animations]="animations"
-          >
-          </ngx-charts-tree-map>
+        <div class="col-lg-6">
+          <div class="card-body scale-up years-experience">
+            <h1>Years of Experience</h1>
+            <hr />
+            <div class="tree-map-container" style="height: 400px;">
+              <ngx-charts-tree-map
+                class="tree-map"
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="treeMapData"
+                [gradient]="gradient"
+                [animations]="animations"
+              >
+              </ngx-charts-tree-map>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card-body scale-up">
+            <h1>Expertise</h1>
+            <hr />
+            <div class="skills-container">
+              <div *ngFor="let skill of employee.skills">
+                <div *ngIf="skill.experience.years" class="skill-detail">
+                  <div class="skill-label">
+                    {{ skill.name }}
+                  </div>
+                  <div class="skill-gauge">
+                    <div
+                      class="gauge"
+                      [ngClass]="
+                        generateSkill(skill.experience.level).toLowerCase()
+                      "
+                      [title]="skill.experience.years + ' years experience'"
+                    >
+                      {{ generateSkill(skill.experience.level) }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card-body scale-up">
+            <h1>Project History</h1>
+            <hr />
+            <div *ngFor="let history of employee.assignments.history">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h1>
+                    {{ history.project }}
+                  </h1>
+                  <h2>
+                    <i class="fa fa-building-o" aria-hidden="true"></i>
+                    {{ history.client }}
+                  </h2>
+                  <div>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    {{ history.start }} &mdash; {{ history.end }}
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <p>
+                    Phasellus bibendum arcu molestie justo aliquet, ut hendrerit
+                    massa dapibus. Ut elit lacus, dapibus sit amet ligula in,
+                    pharetra mollis ante.
+                  </p>
+                  <p>
+                    Integer lacinia non dolor at elementum. In ipsum elit,
+                    consequat a tempor a, dignissim non enim. Mauris porttitor
+                    purus efficitur, iaculis ligula et, congue neque.
+                    Pellentesque aliquet, quam sit amet ullamcorper eleifend,
+                    metus augue lacinia lacus, quis lobortis est nunc at erat.
+                    Nulla aliquet rhoncus malesuada. Vivamus bibendum in ipsum
+                    posuere rutrum. Nulla purus lectus, molestie in tortor vel,
+                    laoreet pharetra est.
+                  </p>
+                  <p>
+                    Pellentesque hendrerit massa nulla, vitae imperdiet erat
+                    pretium sed. Nullam hendrerit diam id dapibus elementum.
+                    Suspendisse arcu nisi, ullamcorper vel nibh quis, vehicula
+                    tempor augue. Maecenas a augue at diam finibus tempus sit
+                    amet et erat. Donec leo tellus, cursus ac imperdiet a,
+                    porttitor id nunc. Curabitur in purus sed elit ullamcorper
+                    vestibulum nec eu orci. Quisque efficitur non risus id
+                    accumsan.
+                  </p>
+                </div>
+                <div class="col-lg-12">
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -142,14 +142,14 @@
           "name": "Angular",
           "experience": {
             "years": 0.5,
-            "level": 2
+            "level": 3
           }
         },
         {
           "name": "JavaScript",
           "experience": {
             "years": 3,
-            "level": 3
+            "level": 4
           }
         },
         {
@@ -162,8 +162,15 @@
         {
           "name": "HTML",
           "experience": {
-            "years": 5,
-            "level": 4
+            "years": 6,
+            "level": 5
+          }
+        },
+        {
+          "name": "CSS",
+          "experience": {
+            "years": 6,
+            "level": 5
           }
         },
         {
@@ -199,9 +206,48 @@
         "current": [
           {
             "client": "Union Bank",
-            "project": "CSX",
+            "project": "CSX R3",
             "assigned": "2001-11-15",
-            "allocation": 100
+            "allocation": 100,
+            "details": {
+              "role": "Front End Developer",
+              "description": ""
+            }
+          }
+        ],
+        "history": [
+          {
+            "client": "Union Bank",
+            "project": "CSX R3",
+            "assigned": "2017-04-24",
+            "start": "2017-04-25",
+            "end": "2017-06-15",
+            "details": {
+              "role": "Front End Developer",
+              "description": ""
+            }
+          },
+          {
+            "client": "Disney",
+            "project": "Stitch",
+            "assigned": "2017-06-20",
+            "start": "2017-06-22",
+            "end": "2018-1-12",
+            "details": {
+              "role": "Front End Developer",
+              "description": ""
+            }
+          },
+          {
+            "client": "Acura",
+            "project": "Dealership Portal",
+            "assigned": "2017-06-30",
+            "start": "2017-07-03",
+            "end": "2017-8-16",
+            "details": {
+              "role": "Front End Developer",
+              "description": ""
+            }
           }
         ]
       }

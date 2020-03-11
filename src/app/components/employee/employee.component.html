@@ -44,8 +44,8 @@
         </div>
 
         <div class="skills-container">
-          <div *ngFor="let skill of employee.skills">
-            <div *ngIf="skill.experience.years" class="skill-detail">
+          <div *ngFor="let skill of employee.skills; let i = index">
+            <div *ngIf="i <= 5" class="skill-detail">
               <div class="skill-label">
                 {{ skill.name }}
               </div>
