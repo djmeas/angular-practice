@@ -19,6 +19,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NgxGraphModule } from '@swimlane/ngx-graph';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillsComponent } from './components/skills/skills.component';
+import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     VideoGameDetailComponent,
     EmployeeComponent,
     EmployeeViewComponent,
-    SkillsComponent
+    SkillsComponent,
+    LoadingScreenComponent
   ],
   imports: [
     BrowserModule,

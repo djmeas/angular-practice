@@ -191,6 +191,7 @@
         "history": [
           {
             "client": "Union Bank",
+            "clientImage": "union_bank.svg",
             "project": "CSX R3",
             "assigned": "2017-04-24",
             "start": "2017-04-25",
@@ -202,6 +203,7 @@
           },
           {
             "client": "Disney",
+            "clientImage": "disney.png",
             "project": "Stitch",
             "assigned": "2017-06-20",
             "start": "2017-06-22",
@@ -213,6 +215,7 @@
           },
           {
             "client": "Acura",
+            "clientImage": "acura.png",
             "project": "Dealership Portal",
             "assigned": "2017-06-30",
             "start": "2017-07-03",
@@ -385,34 +388,49 @@
         "history": [
           {
             "client": "Union Bank",
+            "clientImage": "union_bank.svg",
             "project": "CSX R3",
             "assigned": "2017-04-24",
             "start": "2017-04-25",
             "end": "2017-06-15",
             "details": {
-              "role": "Front End Developer",
+              "role": "Project Manager",
+              "description": ""
+            }
+          },
+          {
+            "client": "Daylight",
+            "clientImage": "daylight.png",
+            "project": "Agent Portal",
+            "assigned": "2017-04-24",
+            "start": "2017-04-25",
+            "end": "2017-06-15",
+            "details": {
+              "role": "Project Manager",
               "description": ""
             }
           },
           {
             "client": "Disney",
+            "clientImage": "disney.png",
             "project": "Stitch",
             "assigned": "2017-06-20",
             "start": "2017-06-22",
             "end": "2018-1-12",
             "details": {
-              "role": "Front End Developer",
+              "role": "Project Manager",
               "description": ""
             }
           },
           {
             "client": "Acura",
+            "clientImage": "acura.png",
             "project": "Dealership Portal",
             "assigned": "2017-06-30",
             "start": "2017-07-03",
             "end": "2017-8-16",
             "details": {
-              "role": "Front End Developer",
+              "role": "Project Manager",
               "description": ""
             }
           }

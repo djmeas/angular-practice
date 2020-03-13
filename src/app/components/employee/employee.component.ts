@@ -4,6 +4,7 @@ import { Select, Store } from '@ngxs/store';
 import { GetEmployees } from '../../actions/employee/employee.actions';
 import { Observable } from 'rxjs';
 import { Employee } from '../../model/employee.model';
+import { LoadingScreenComponent } from '../loading-screen/loading-screen.component';
 
 @Component({
   selector: 'app-employee',
