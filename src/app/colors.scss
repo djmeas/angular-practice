@@ -11,8 +11,16 @@ $allocation4: rgba(255, 209, 102, 1);
 $allocation5: rgba(252, 222, 156, 1);
 
 $oaOrange: #f3771f;
+$oaOrangeLighter: #e7965b;
 $oaOrangeLight: #ebcdb8;
 $oaGray: #939497;
+$oaOrangeGradient: linear-gradient(
+  90deg,
+  rgba(243, 119, 31, 1) 0%,
+  rgba(243, 119, 31, 1) 40%,
+  rgba(243, 119, 31, 1) 60%,
+  rgba(235, 205, 184, 1) 100%
+);
 
 $gaugeExpert: rgba(26, 89, 62, 1);
 $gaugeAdvanced: rgba(37, 124, 92, 1);

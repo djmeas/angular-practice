@@ -77,6 +77,36 @@
                   </span>
                 </div>
               </div>
+              <hr />
+              <div
+                class="assignment-details"
+                *ngFor="let assignment of employee.assignments.current"
+              >
+                <div class="project-details">
+                  <div class="name">
+                    <i class="fa fa-circle" aria-hidden="true"></i>&nbsp;
+                    <b>
+                      {{ assignment.project }} &mdash;
+                      {{ assignment.client }}
+                    </b>
+                  </div>
+                  <div class="start-end">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;
+                    {{ assignment.start }} &mdash; {{ assignment.end }}
+                  </div>
+                </div>
+
+                <div class="roles">
+                  <b>Roles:</b> {{ assignment.details.roles.join(', ') }}
+                </div>
+                <p>
+                  Phasellus bibendum arcu molestie justo aliquet. Ut hendrerit
+                  massa dapibus. Ut elit lacus, dapibus sit amet ligula in,
+                  pharetra mollis ante. Phasellus bibendum arcu molestie justo
+                  aliquet.
+                </p>
+                <hr />
+              </div>
             </div>
           </div>
         </div>
@@ -145,7 +175,7 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th style="width: 25%">Skill</th>
+                    <th style="width: 15%">Skill</th>
                     <th class="text-center" style="width: 25%">Years</th>
                     <th>Level</th>
                   </tr>

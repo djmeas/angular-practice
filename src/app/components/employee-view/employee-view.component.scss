@@ -85,24 +85,13 @@
       // box-shadow: 0px 3px 3px 0px #9aacbd;
     }
   }
-  .assignment {
-    .allocation-legend {
-      margin-bottom: 5px;
-      &:first-child .fa {
-        color: $allocation2;
-      }
-      &:nth-child(2) .fa {
-        color: $allocation3;
-      }
-      &:nth-child(3) .fa {
-        color: $allocation4;
-      }
-    }
-  }
   .employee-allocation {
     display: flex;
+    margin-bottom: 20px;
     .allocation {
       padding: 5px;
+      text-align: center;
+      color: white;
       .allocation-percentage {
         display: none;
       }
@@ -123,9 +112,6 @@
           cursor: default;
         }
       }
-      text-align: center;
-      color: white;
-
       &:first-child {
         background-color: $allocation2;
         border-top-left-radius: 5px;
@@ -228,5 +214,53 @@
   .role,
   .start-end {
     margin-top: 5px;
+  }
+}
+
+.employee-content {
+  .card-body {
+    .assignment {
+      .assignment-details:nth-child(1) {
+        p {
+          color: green;
+        }
+        background-color: blue !important;
+      }
+    }
+  }
+}
+
+.assignment {
+  .assignment-details:nth-of-type(2) {
+    .fa-circle {
+      color: $allocation2;
+    }
+  }
+  .assignment-details:nth-of-type(3) {
+    .fa-circle {
+      color: $allocation3;
+    }
+  }
+  .assignment-details:nth-of-type(4) {
+    .fa-circle {
+      color: $allocation4;
+    }
+  }
+  .assignment-details {
+    .roles,
+    p {
+      margin-top: 10px;
+    }
+    .project-details {
+      display: flex;
+      .name {
+        flex: 1;
+        font-size: 1.25em;
+      }
+      .start-end {
+        flex: 1;
+        text-align: right;
+      }
+    }
   }
 }

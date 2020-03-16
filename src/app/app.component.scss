@@ -12,14 +12,17 @@ body {
     display: flex;
     .sidebar {
       flex: 1;
+
       position: fixed;
       background-color: #bfc0cb;
       height: 100%;
       a {
-        font-size: 2em;
+        font-size: 1.75em;
         color: white;
+        text-decoration: none;
         .sidebar-link {
           padding: 10px 20px;
+          transition: 0.3s;
           border-bottom: 1px solid white;
           &.logo {
             background-color: white;
@@ -32,6 +35,19 @@ body {
               flex: 10;
               width: 150px;
             }
+          }
+        }
+        &.active {
+          .sidebar-link {
+            transition: 0.3s;
+            background: linear-gradient(
+              90deg,
+              rgba(243, 119, 31, 1) 0%,
+              rgba(243, 119, 31, 1) 40%,
+              rgba(243, 119, 31, 1) 60%,
+              rgba(235, 205, 184, 1) 100%
+            );
+            padding-left: 35px;
           }
         }
       }
@@ -63,6 +79,7 @@ nav {
     &:nth-child(n + 2) {
       flex: 5;
     }
+
     &:hover {
       background-color: lightslategray;
       transition: 0.3s;
