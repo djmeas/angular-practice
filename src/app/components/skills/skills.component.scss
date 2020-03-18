@@ -1,9 +1,10 @@
+@import '../../colors.scss';
+
 .skill-table-container {
   h1 {
     margin-top: 0;
   }
-}
-
-.table {
-  background-color: white;
+  a {
+    text-decoration: initial;
+  }
 }

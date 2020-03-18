@@ -3,13 +3,15 @@ import { Injectable } from '@angular/core';
 import { Employee } from '../model/employee.model';
 import {
   GetEmployees,
-  GetEmployee
+  GetEmployee,
+  GetEmployeesByRole
 } from '../actions/employee/employee.actions';
 import { EmployeeService } from '../services/employee/employee.service';
 import { tap } from 'rxjs/operators';
 
 export class EmployeeStateModel {
   list: Employee[];
+  byRole: Employee[];
   view: Employee;
 }
 
@@ -17,6 +19,7 @@ export class EmployeeStateModel {
   name: 'employees',
   defaults: {
     list: [],
+    byRole: [],
     view: null
   }
 })
@@ -34,6 +37,11 @@ export class EmployeeState {
   @Selector()
   static getEmployee(state: EmployeeStateModel) {
     return state.view;
+  }
+
+  @Selector()
+  static getEmployeesByRole(state: EmployeeStateModel) {
+    return state.byRole;
   }
 
   @Action(GetEmployees)
@@ -61,6 +69,22 @@ export class EmployeeState {
         setState({
           ...state,
           view: result
+        });
+      })
+    );
+  }
+
+  @Action(GetEmployeesByRole)
+  getEmployeesByRole(
+    { getState, setState }: StateContext<EmployeeStateModel>,
+    { keyword }
+  ) {
+    return this.employeeService.getEmployeesByRole(keyword).pipe(
+      tap(result => {
+        const state = getState();
+        setState({
+          ...state,
+          byRole: result
         });
       })
     );

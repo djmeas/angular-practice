@@ -773,82 +773,98 @@
     {
       "id": 1,
       "name": "HTML",
-      "category": "Development"
+      "category": "Development",
+      "employeesWithSkill": 36
     },
     {
       "id": 2,
       "name": "CSS",
-      "category": "Development"
+      "category": "Development",
+      "employeesWithSkill": 36
     },
     {
       "id": 3,
       "name": "JavaScript",
-      "category": "Development"
+      "category": "Development",
+      "employeesWithSkill": 24
     },
     {
       "id": 4,
       "name": "Angular",
-      "category": "Development"
+      "category": "Development",
+      "employeesWithSkill": 19
     },
     {
       "id": 4,
       "name": "React",
-      "category": "Development"
+      "category": "Development",
+      "employeesWithSkill": 22
     },
     {
       "id": 5,
       "name": "Vue",
-      "category": "Development"
+      "category": "Development",
+      "employeesWithSkill": 12
     },
     {
       "id": 6,
       "name": "UI/UX",
-      "category": "Design"
+      "category": "Design",
+      "employeesWithSkill": 12
     },
     {
       "id": 7,
       "name": "Photoshop",
-      "category": "Design"
+      "category": "Design",
+      "employeesWithSkill": 11
     },
     {
       "id": 8,
       "name": "Prototyping",
-      "category": "Design"
+      "category": "Design",
+      "employeesWithSkill": 11
     },
     {
       "id": 9,
       "name": "Java",
-      "category": "Development"
+      "category": "Development",
+      "employeesWithSkill": 18
     },
     {
       "id": 10,
       "name": ".NET",
-      "category": "Development"
+      "category": "Development",
+      "employeesWithSkill": 19
     },
     {
       "id": 11,
       "name": "MySQL",
-      "category": "Development"
+      "category": "Development",
+      "employeesWithSkill": 18
     },
     {
       "id": 12,
       "name": "NoSQL",
-      "category": "Development"
+      "category": "Development",
+      "employeesWithSkill": 16
     },
     {
       "id": 13,
       "name": "PM",
-      "category": "Management"
+      "category": "Management",
+      "employeesWithSkill": 27
     },
     {
       "id": 14,
       "name": "BA",
-      "category": "Management"
+      "category": "Management",
+      "employeesWithSkill": 49
     },
     {
       "id": 15,
       "name": "Agile",
-      "category": "Management"
+      "category": "Management",
+      "employeesWithSkill": 25
     }
   ]
 }

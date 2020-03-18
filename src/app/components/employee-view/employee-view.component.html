@@ -1,4 +1,4 @@
-<div *ngIf="employee" class="content-wrapper">
+<div *ngIf="!isLoading && employee" class="content-wrapper">
   <div class="row">
     <div class="col-lg-3 position-sticky">
       <div class="card-body employee-sidebar scale-up">
@@ -92,7 +92,8 @@
                   </div>
                   <div class="start-end">
                     <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;
-                    {{ assignment.start }} &mdash; {{ assignment.end }}
+                    {{ assignment.start | date }} &mdash;
+                    {{ assignment.end | date }}
                   </div>
                 </div>
 
@@ -128,46 +129,6 @@
           </div>
         </div> -->
         <div class="col-lg-6">
-          <!-- <div class="card-body scale-up">
-            <h1>Expertise</h1>
-            <hr />
-            <div class="skills-container">
-              <div class="skill-header">
-                <div class="skill-label-header">
-                  Years
-                </div>
-                <div class="skill-gauge-header">
-                  Skill Level
-                </div>
-              </div>
-              <div *ngFor="let skill of employee.skills">
-                <div *ngIf="skill.experience.years" class="skill-detail">
-                  <div class="skill-label">
-                    <div class="years">
-                      {{
-                        skill.experience.years >= 1
-                          ? skill.experience.years
-                          : '< 1'
-                      }}
-                    </div>
-                    <div class="expertise">
-                      {{ skill.name }}
-                    </div>
-                  </div>
-                  <div class="skill-gauge">
-                    <div
-                      class="gauge"
-                      [ngClass]="
-                        generateSkill(skill.experience.level).toLowerCase()
-                      "
-                      [title]="skill.experience.years + ' years experience'"
-                    >
-                      {{ generateSkill(skill.experience.level) }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           <div class="card-body scale-up">
             <h1>Expertise</h1>
             <hr />
@@ -198,7 +159,7 @@
                         "
                         [title]="skill.experience.years + ' years experience'"
                       >
-                        {{ generateSkill(skill.experience.level) }}
+                        {{ skill.experience.level | skillText }}
                       </div>
                     </td>
                   </tr>
@@ -226,7 +187,7 @@
                   </div>
                   <div class="start-end">
                     <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    {{ history.start }} &mdash; {{ history.end }}
+                    {{ history.start | date }} - {{ history.end | date }}
                   </div>
                 </div>
                 <div class="col-lg-2">
@@ -236,11 +197,6 @@
                   />
                 </div>
                 <div class="col-lg-8">
-                  <p>
-                    Phasellus bibendum arcu molestie justo aliquet, ut hendrerit
-                    massa dapibus. Ut elit lacus, dapibus sit amet ligula in,
-                    pharetra mollis ante.
-                  </p>
                   <p>
                     Integer lacinia non dolor at elementum. In ipsum elit,
                     consequat a tempor a, dignissim non enim. Mauris porttitor
@@ -267,4 +223,8 @@
       </div>
     </div>
   </div>
+</div>
+
+<div *ngIf="isLoading">
+  Loading!!!!!!
 </div>

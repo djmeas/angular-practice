@@ -5,6 +5,7 @@ import { VideoGameDetailComponent } from './components/video-game-detail/video-g
 import { EmployeeComponent } from './components/employee/employee.component';
 import { EmployeeViewComponent } from './components/employee-view/employee-view.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { SkillViewComponent } from './components/skill-view/skill-view.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'skills',
     component: SkillsComponent
+  },
+  {
+    path: 'skills/:id',
+    component: SkillViewComponent
   }
 ];
 

@@ -15,3 +15,11 @@ export class GetEmployee {
     console.log('GetEmployee action');
   }
 }
+
+export class GetEmployeesByRole {
+  static readonly type = '[Employees] Get By Role';
+
+  constructor(public keyword: string) {
+    console.log('GetEmployeesByRole action');
+  }
+}

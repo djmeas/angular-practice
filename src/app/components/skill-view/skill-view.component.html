@@ -1,0 +1,5 @@
+<div *ngIf="employees.length > 0" class="row">
+  <div *ngFor="let employee of employees" class="col-lg-4">
+    <app-employee-mini-card [employee]="employee"></app-employee-mini-card>
+  </div>
+</div>

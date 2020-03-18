@@ -9,6 +9,7 @@ import { VideoGamesComponent } from './components/video-games/video-games.compon
 import { NgxsModule } from '@ngxs/store';
 import { VideoGameState } from './state/videoGame.state';
 import { EmployeeState } from './state//employee.state';
+import { SkillState } from './state/skill.state';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { VideoGameDetailComponent } from './components/video-game-detail/video-game-detail.component';
@@ -20,6 +21,10 @@ import { NgxGraphModule } from '@swimlane/ngx-graph';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillsComponent } from './components/skills/skills.component';
 import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
+import { PrettyDateDirective } from './directives/pretty-date.directive';
+import { SkillTextPipe } from './pipes/skill-text.pipe';
+import { SkillViewComponent } from './components/skill-view/skill-view.component';
+import { EmployeeMiniCardComponent } from './components/employee-mini-card/employee-mini-card.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +35,16 @@ import { LoadingScreenComponent } from './components/loading-screen/loading-scre
     EmployeeComponent,
     EmployeeViewComponent,
     SkillsComponent,
-    LoadingScreenComponent
+    LoadingScreenComponent,
+    PrettyDateDirective,
+    SkillTextPipe,
+    SkillViewComponent,
+    EmployeeMiniCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxsModule.forRoot([VideoGameState, EmployeeState]),
+    NgxsModule.forRoot([VideoGameState, EmployeeState, SkillState]),
     HttpClientModule,
     ReactiveFormsModule,
     NgxChartsModule,

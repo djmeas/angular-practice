@@ -1,62 +1,20 @@
 @import '../../colors.scss';
 
-.position-sticky {
-  position: sticky;
-  top: 0;
-}
-
 .card-body {
   border: 1px solid lightgray;
   border-radius: 5px;
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  min-height: 300px;
   background-color: white;
   color: $oaGray;
-  h1 {
-    font-size: 1.5em;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    flex: 3;
-  }
-  h2 {
-    font-size: 1.25em;
-  }
-  hr {
-    margin-top: 10px;
-  }
-  .employee-image {
-    width: 100%;
-    border-radius: 5px;
-  }
-  &.employee-sidebar {
-    h1 {
-      font-size: 2em;
-      margin: 15px 0 10px;
-      text-align: center;
-    }
-    .sub-header {
-      display: flex;
-      .location {
-        flex: 1;
-        text-align: center;
-        border-right: 1px solid lightgray;
-      }
-      .role {
-        flex: 1;
-        text-align: center;
-      }
-    }
-  }
-  .contact-icons {
-    display: flex;
-    .icon {
-      flex: 1;
-      text-align: center;
-    }
-  }
   .employee-header {
     display: flex;
-
+    h1 {
+      font-size: 1.75em;
+      margin-top: 0px;
+      flex: 3;
+    }
     .status {
       flex: 1;
       text-align: right;
@@ -77,21 +35,43 @@
       }
     }
   }
+  .sub-header {
+    display: flex;
+    .location,
+    .title {
+      flex: 1;
+    }
+    .location {
+      text-align: right;
+    }
+  }
   &.scale-up {
     transition: 0.5s;
     &:hover {
-      // transition: 0.5s;
-      // transform: scale(1.02, 1.02);
-      // box-shadow: 0px 3px 3px 0px #9aacbd;
+      transition: 0.5s;
+      background-color: #fff9f1;
+      box-shadow: 0px 3px 3px 0px #9aacbd;
+      cursor: default;
+    }
+  }
+  .assignment {
+    .allocation-legend {
+      margin-bottom: 5px;
+      &:first-child .fa {
+        color: $allocation2;
+      }
+      &:nth-child(2) .fa {
+        color: $allocation3;
+      }
+      &:nth-child(3) .fa {
+        color: $allocation4;
+      }
     }
   }
   .employee-allocation {
     display: flex;
-    margin-bottom: 20px;
+    margin-top: 10px;
     .allocation {
-      padding: 5px;
-      text-align: center;
-      color: white;
       .allocation-percentage {
         display: none;
       }
@@ -112,6 +92,9 @@
           cursor: default;
         }
       }
+      text-align: center;
+      color: white;
+
       &:first-child {
         background-color: $allocation2;
         border-top-left-radius: 5px;
@@ -132,37 +115,26 @@
   .location {
     margin-bottom: 10px;
   }
-
   .skills-container {
     margin-top: 20px;
     border: 1px solid lightgray;
     padding: 15px;
     background-color: #f0fff9;
-    table {
-      background-color: #f0fff9;
-    }
-    .skill-header {
+    min-height: 160px;
+    .skill-detail {
       display: flex;
-      margin-bottom: 10px;
-      font-weight: bold;
-      .skill-label-header {
+      .skill-label {
         flex: 1;
         text-align: right;
       }
-      .skill-gauge-header {
-        flex: 7;
-        text-align: center;
-      }
-    }
-    .skill-detail {
       .skill-gauge {
-        flex: 2;
+        flex: 4.5;
         padding-left: 10px;
-        height: 30px;
         .gauge {
           padding-left: 10px;
           border: 1px solid white;
           color: white;
+          font-size: 0.95em;
           &.expert {
             width: 100%;
             background-color: $oaOrange;
@@ -173,17 +145,17 @@
             opacity: 0.9;
           }
           &.intermediate {
-            width: 50%;
+            width: 65%;
             background-color: $oaOrange;
             opacity: 0.8;
           }
           &.novice {
-            width: 35%;
+            width: 40%;
             background-color: $oaOrange;
             opacity: 0.7;
           }
           &.beginner {
-            width: 20%;
+            width: 30%;
             background-color: $oaOrange;
             opacity: 0.6;
           }
@@ -192,81 +164,15 @@
             background-color: $oaOrange;
             opacity: 0.5;
           }
+          .years-experience {
+            display: none;
+          }
+          &:hover {
+            .years-experience {
+              display: inline;
+            }
+          }
         }
-      }
-    }
-  }
-}
-
-.tree-map-container {
-  background-color: white;
-  height: 245px;
-}
-
-.project-history-container {
-  h2 {
-    margin-top: 0;
-    font-size: 1.5em;
-  }
-  h3 {
-    font-size: 1.25em;
-  }
-  img {
-    width: 100%;
-    margin-top: 10%;
-  }
-  .start-end {
-    font-size: 0.9em;
-  }
-  .role,
-  .start-end {
-    margin-top: 5px;
-  }
-}
-
-.employee-content {
-  .card-body {
-    .assignment {
-      .assignment-details:nth-child(1) {
-        p {
-          color: green;
-        }
-        background-color: blue !important;
-      }
-    }
-  }
-}
-
-.assignment {
-  .assignment-details:nth-of-type(2) {
-    .fa-circle {
-      color: $allocation2;
-    }
-  }
-  .assignment-details:nth-of-type(3) {
-    .fa-circle {
-      color: $allocation3;
-    }
-  }
-  .assignment-details:nth-of-type(4) {
-    .fa-circle {
-      color: $allocation4;
-    }
-  }
-  .assignment-details {
-    .roles,
-    p {
-      margin-top: 10px;
-    }
-    .project-details {
-      display: flex;
-      .name {
-        flex: 1;
-        font-size: 1.25em;
-      }
-      .start-end {
-        flex: 1;
-        text-align: right;
       }
     }
   }

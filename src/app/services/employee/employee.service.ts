@@ -6,15 +6,21 @@ import { Employee } from '../../model/employee.model';
   providedIn: 'root'
 })
 export class EmployeeService {
-  constructor(public http: HttpClient) {}
+  constructor(public http: HttpClient) {
+    console.log('Service: Making get request...');
+  }
 
   getEmployees() {
-    console.log('Service: Making get request...');
     return this.http.get<Employee[]>('http://localhost:3000/employees/');
   }
 
   getEmployee(id: number) {
-    console.log('Service: Making get request...');
     return this.http.get<Employee>(`http://localhost:3000/employees/${id}`);
+  }
+
+  getEmployeesByRole(keyword: string) {
+    return this.http.get<Employee[]>(
+      `http://localhost:3000/employees?q=${keyword}`
+    );
   }
 }

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import './src/app/colors.scss';
+
+.card-body {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: white;
+  color: $oaGray;
+}
+
+.table {
+  background-color: white;
+  color: $oaGray;
+}

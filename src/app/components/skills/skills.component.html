@@ -8,31 +8,24 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>alsdkjfakldf</td>
-        <td>alksdfj adslfkjasdf</td>
-        <td>27</td>
-      </tr>
-      <tr>
-        <td>alsdkjfakldf</td>
-        <td>alksdfj adslfkjasdf</td>
-        <td>27</td>
-      </tr>
-      <tr>
-        <td>alsdkjfakldf</td>
-        <td>alksdfj adslfkjasdf</td>
-        <td>27</td>
-      </tr>
-      <tr>
-        <td>alsdkjfakldf</td>
-        <td>alksdfj adslfkjasdf</td>
-        <td>27</td>
-      </tr>
-      <tr>
-        <td>alsdkjfakldf</td>
-        <td>alksdfj adslfkjasdf</td>
-        <td>27</td>
+      <tr *ngFor="let skill of skills$ | async">
+        <td>
+          <a [routerLink]="encodeURL(skill.name)">{{ skill.name }}</a>
+        </td>
+        <td>{{ skill.category }}</td>
+        <td>{{ skill.employeesWithSkill }}</td>
       </tr>
     </tbody>
   </table>
+</div>
+
+<div class="skill-card-container">
+  <div class="row">
+    <div *ngFor="let skill of skills$ | async" class="col-lg-4">
+      <div class="card-body">
+        {{ skill.name }} -
+        {{ skill.category }}
+      </div>
+    </div>
+  </div>
 </div>
