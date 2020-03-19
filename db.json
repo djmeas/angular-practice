@@ -1,76 +1,6 @@
 {
   "employees": [
     {
-      "id": 1,
-      "title": "Front End Developer",
-      "details": {
-        "firstName": "Chet",
-        "lastName": "Ly",
-        "address": {
-          "street1": "123 West River Rd",
-          "street2": "Apt A",
-          "city": "Long Beach",
-          "state": "CA",
-          "postalCode": 49872
-        },
-        "profilePicture": "chet.jpg"
-      },
-      "skills": [
-        {
-          "name": "Angular",
-          "experience": {
-            "years": 5,
-            "level": 5
-          }
-        },
-        {
-          "name": "JavaScript",
-          "experience": {
-            "years": 11,
-            "level": 5
-          }
-        },
-        {
-          "name": "SQL",
-          "experience": {
-            "years": 3,
-            "level": 3
-          }
-        },
-        {
-          "name": "HTML",
-          "experience": {
-            "years": 12,
-            "level": 5
-          }
-        },
-        {
-          "name": "UI-UX",
-          "experience": {
-            "years": 8,
-            "level": 4
-          }
-        },
-        {
-          "name": "Java",
-          "experience": {
-            "years": 2,
-            "level": 2
-          }
-        }
-      ],
-      "assignments": {
-        "current": [
-          {
-            "client": "NBC Universal",
-            "project": "The Board",
-            "assigned": "2020-01-15",
-            "allocation": 100
-          }
-        ]
-      }
-    },
-    {
       "id": 2,
       "title": "Front End Developer",
       "details": {
@@ -221,6 +151,27 @@
       },
       "skills": [
         {
+          "name": "Java",
+          "experience": {
+            "years": 15,
+            "level": 5
+          }
+        },
+        {
+          "name": "ML",
+          "experience": {
+            "years": 1,
+            "level": 5
+          }
+        },
+        {
+          "name": "SQL",
+          "experience": {
+            "years": 15,
+            "level": 5
+          }
+        },
+        {
           "name": "Angular",
           "experience": {
             "years": 0.25,
@@ -234,48 +185,78 @@
             "level": 2
           }
         },
-        {
-          "name": "SQL",
-          "experience": {
-            "years": 15,
-            "level": 5
-          }
-        },
+
         {
           "name": "HTML",
           "experience": {
             "years": 3,
             "level": 3
           }
-        },
-        {
-          "name": "Java",
-          "experience": {
-            "years": 15,
-            "level": 5
-          }
-        },
-        {
-          "name": "ML",
-          "experience": {
-            "years": 1,
-            "level": 5
-          }
         }
       ],
       "assignments": {
         "current": [
           {
-            "client": "Avvid",
-            "project": "Damage Detection",
-            "assigned": "2020-01-17",
-            "allocation": 50
+            "client": "Union Bank",
+            "project": "CSX R3",
+            "assigned": "2019-11-15",
+            "start": "2019-11-26",
+            "end": "2020-03-30",
+            "allocation": 50,
+            "details": {
+              "roles": ["Back End Developer"],
+              "description": ""
+            }
           },
           {
+            "client": "USAA",
+            "project": "Avvid",
+            "assigned": "2020-03-09",
+            "start": "2020-03-10",
+            "end": "2020-10-18",
+            "allocation": 50,
+            "details": {
+              "roles": ["Back End Developer"],
+              "description": ""
+            }
+          }
+        ],
+        "history": [
+          {
             "client": "Union Bank",
-            "project": "CSX",
-            "assigned": "2020-01-17",
-            "allocation": 50
+            "clientImage": "union_bank.svg",
+            "project": "CSX R3",
+            "assigned": "2017-04-24",
+            "start": "2017-04-25",
+            "end": "2017-06-15",
+            "details": {
+              "role": "Front End Developer",
+              "description": ""
+            }
+          },
+          {
+            "client": "Disney",
+            "clientImage": "disney.png",
+            "project": "Stitch",
+            "assigned": "2017-06-20",
+            "start": "2017-06-22",
+            "end": "2018-1-12",
+            "details": {
+              "role": "Front End Developer",
+              "description": ""
+            }
+          },
+          {
+            "client": "Acura",
+            "clientImage": "acura.png",
+            "project": "Dealership Portal",
+            "assigned": "2017-06-30",
+            "start": "2017-07-03",
+            "end": "2017-8-16",
+            "details": {
+              "role": "Front End Developer",
+              "description": ""
+            }
           }
         ]
       }
@@ -453,77 +434,6 @@
       }
     },
     {
-      "id": 5,
-      "title": "Front End Developer",
-      "details": {
-        "firstName": "Miguel",
-        "lastName": "Vasquez",
-        "address": {
-          "street1": "3456 East Bank Ave",
-          "street2": "Apt 499",
-          "city": "Culver City",
-          "state": "CA",
-          "postalCode": 90876
-        },
-        "profilePicture": "mohammad.jpg"
-      },
-      "skills": [
-        {
-          "name": "Angular",
-          "experience": {
-            "years": 3,
-            "level": 4
-          }
-        },
-        {
-          "name": "JavaScript",
-          "experience": {
-            "years": 6,
-            "level": 5
-          }
-        },
-        {
-          "name": "SQL",
-          "experience": {
-            "years": 1,
-            "level": 2
-          }
-        },
-        {
-          "name": "HTML",
-          "experience": {
-            "years": 6,
-            "level": 5
-          }
-        },
-
-        {
-          "name": "UI-UX",
-          "experience": {
-            "years": 2,
-            "level": 3
-          }
-        },
-        {
-          "name": "Java",
-          "experience": {
-            "years": 0.5,
-            "level": 2
-          }
-        }
-      ],
-      "assignments": {
-        "current": [
-          {
-            "client": "Daylight",
-            "project": "Agent Dashboard",
-            "assigned": "2020-02-21",
-            "allocation": 100
-          }
-        ]
-      }
-    },
-    {
       "id": 6,
       "title": "Designer",
       "details": {
@@ -571,161 +481,66 @@
       "assignments": {
         "current": [
           {
-            "client": "FEP",
-            "project": "Insurance Dashboard",
-            "assigned": "2020-02-21",
-            "allocation": 75
+            "client": "FEP Blue",
+            "project": "CSX R3",
+            "assigned": "2019-11-15",
+            "start": "2019-11-26",
+            "end": "2020-03-30",
+            "allocation": 75,
+            "details": {
+              "roles": ["Designer"],
+              "description": ""
+            }
           },
           {
             "client": "Delta Faucets",
-            "project": "Mock Up",
-            "assigned": "2020-02-21",
-            "allocation": 25
+            "project": "FEP Blue",
+            "assigned": "2020-03-09",
+            "start": "2020-03-10",
+            "end": "2020-10-18",
+            "allocation": 25,
+            "details": {
+              "roles": ["Designer"],
+              "description": ""
+            }
           }
-        ]
-      }
-    },
-    {
-      "id": 7,
-      "title": "Software Engineer",
-      "details": {
-        "firstName": "Dmitry",
-        "lastName": "Lukianenko",
-        "address": {
-          "street1": "3456 East Bank Ave",
-          "street2": "Apt 499",
-          "city": "Culver City",
-          "state": "CA",
-          "postalCode": 90876
-        },
-        "profilePicture": "dima.jpg"
-      },
-      "skills": [
-        {
-          "name": "Angular",
-          "experience": {
-            "years": 7,
-            "level": 5
-          }
-        },
-        {
-          "name": "JavaScriptX",
-          "experience": {
-            "years": 10,
-            "level": 5
-          }
-        },
-        {
-          "name": "Java",
-          "experience": {
-            "years": 8,
-            "level": 5
-          }
-        },
-        {
-          "name": "UI-UX",
-          "experience": {
-            "years": 10,
-            "level": 4
-          }
-        },
-        {
-          "name": "Photoshop",
-          "experience": {
-            "years": 6,
-            "level": 5
-          }
-        },
-        {
-          "name": "Accessibility",
-          "experience": {
-            "years": 1,
-            "level": 3
-          }
-        },
-        {
-          "name": "HTML",
-          "experience": {
-            "years": 16,
-            "level": 5
-          }
-        }
-      ],
-      "assignments": {
-        "current": [
+        ],
+        "history": [
           {
-            "client": "NBCU",
-            "project": "The Board",
-            "assigned": "2020-02-21",
-            "allocation": 50
+            "client": "Union Bank",
+            "clientImage": "union_bank.svg",
+            "project": "CSX R3",
+            "assigned": "2017-04-24",
+            "start": "2017-04-25",
+            "end": "2017-06-15",
+            "details": {
+              "role": "Designer",
+              "description": ""
+            }
           },
           {
-            "client": "FEP",
-            "project": "Mock Up",
-            "assigned": "2020-02-21",
-            "allocation": 50
-          }
-        ]
-      }
-    },
-    {
-      "id": 8,
-      "title": "Designer",
-      "details": {
-        "firstName": "Justin",
-        "lastName": "Chong",
-        "address": {
-          "street1": "3456 East Bank Ave",
-          "street2": "Apt 499",
-          "city": "Culver City",
-          "state": "CA",
-          "postalCode": 90876
-        },
-        "profilePicture": "justin.png"
-      },
-      "skills": [
-        {
-          "name": "UI-UX",
-          "experience": {
-            "years": 4,
-            "level": 4
-          }
-        },
-        {
-          "name": "Photoshop",
-          "experience": {
-            "years": 6,
-            "level": 5
-          }
-        },
-        {
-          "name": "Accessibility",
-          "experience": {
-            "years": 1,
-            "level": 3
-          }
-        },
-        {
-          "name": "HTML",
-          "experience": {
-            "years": 2,
-            "level": 2
-          }
-        }
-      ],
-      "assignments": {
-        "current": [
-          {
-            "client": "FEP",
-            "project": "Insurance Dashboard",
-            "assigned": "2020-02-21",
-            "allocation": 75
+            "client": "Disney",
+            "clientImage": "disney.png",
+            "project": "Stitch",
+            "assigned": "2017-06-20",
+            "start": "2017-06-22",
+            "end": "2018-1-12",
+            "details": {
+              "role": "Designer",
+              "description": ""
+            }
           },
           {
-            "client": "Delta Faucets",
-            "project": "Mock Up",
-            "assigned": "2020-02-21",
-            "allocation": 25
+            "client": "Acura",
+            "clientImage": "acura.png",
+            "project": "Dealership Portal",
+            "assigned": "2017-06-30",
+            "start": "2017-07-03",
+            "end": "2017-8-16",
+            "details": {
+              "role": "Designer",
+              "description": ""
+            }
           }
         ]
       }
@@ -827,13 +642,6 @@
       "name": "Agile",
       "category": "Management",
       "employeesWithSkill": 25
-    }
-  ]
-  "projects": [
-    {
-      "id": 1,
-      "client": "Union Bank",
-      "name": ""
     }
   ]
 }

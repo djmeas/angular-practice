@@ -1,11 +1,23 @@
 <oa-loading-screen *ngIf="!employees"> </oa-loading-screen>
 
+<div class="row search">
+  <div class="col-lg-4">
+    <input type="text" class="form-control" placeholder="Search..." />
+  </div>
+</div>
+
 <div class="row">
   <div *ngFor="let employee of employees | async" class="col-lg-4">
     <app-employee-mini-card [employee]="employee"></app-employee-mini-card>
   </div>
 
   <!-- Extra Instances to fill up page -->
+  <div *ngFor="let employee of employees | async" class="col-lg-4">
+    <app-employee-mini-card [employee]="employee"></app-employee-mini-card>
+  </div>
+  <div *ngFor="let employee of employees | async" class="col-lg-4">
+    <app-employee-mini-card [employee]="employee"></app-employee-mini-card>
+  </div>
   <div *ngFor="let employee of employees | async" class="col-lg-4">
     <app-employee-mini-card [employee]="employee"></app-employee-mini-card>
   </div>
