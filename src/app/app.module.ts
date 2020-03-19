@@ -21,6 +21,9 @@ import { PrettyDateDirective } from './directives/pretty-date.directive';
 import { SkillTextPipe } from './pipes/skill-text.pipe';
 import { SkillViewComponent } from './components/skill-view/skill-view.component';
 import { EmployeeMiniCardComponent } from './components/employee-mini-card/employee-mini-card.component';
+import { ProjectAllocationBarComponent } from './components/project-allocation-bar/project-allocation-bar.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { EmployeeMiniCardComponent } from './components/employee-mini-card/emplo
     PrettyDateDirective,
     SkillTextPipe,
     SkillViewComponent,
-    EmployeeMiniCardComponent
+    EmployeeMiniCardComponent,
+    ProjectAllocationBarComponent,
+    ProjectsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -66,17 +66,9 @@
             <h1>Project Allocation</h1>
             <hr />
             <div class="assignment">
-              <div class="employee-allocation">
-                <div
-                  class="allocation scale-up"
-                  *ngFor="let assignment of employee.assignments.current"
-                  [style]="'flex:' + assignment.allocation"
-                >
-                  <span class="">
-                    {{ assignment.client }} {{ assignment.allocation }}%
-                  </span>
-                </div>
-              </div>
+              <app-project-allocation-bar
+                [currentAssignments]="employee.assignments.current"
+              ></app-project-allocation-bar>
               <hr />
               <div
                 class="assignment-details"

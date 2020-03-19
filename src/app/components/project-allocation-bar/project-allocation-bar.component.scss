@@ -1,0 +1,46 @@
+@import '../../colors.scss';
+
+.employee-allocation {
+  display: flex;
+  margin-bottom: 20px;
+  .allocation {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    .allocation-percentage {
+      display: none;
+    }
+    &:hover {
+      .allocation-percentage {
+        display: inherit;
+      }
+      .client {
+        display: none;
+      }
+    }
+    &.scale-up {
+      transition: 0.2s;
+      &:hover {
+        transition: 0.2s;
+        transform: scale(1.02, 1.02);
+        box-shadow: 0px 3px 3px 0px #9aacbd;
+        cursor: default;
+      }
+    }
+    &:first-child {
+      background-color: $allocation2;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    &:nth-child(2) {
+      background-color: $allocation3;
+    }
+    &:nth-child(3) {
+      background-color: $allocation4;
+    }
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}

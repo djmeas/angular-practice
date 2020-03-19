@@ -22,5 +22,6 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit(): void {
     this.store.dispatch(new GetSkills());
+    window.scrollTo(0, 0);
   }
 }

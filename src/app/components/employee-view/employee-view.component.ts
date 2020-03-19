@@ -64,6 +64,7 @@ export class EmployeeViewComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.fetchEmployee();
+    window.scrollTo(0, 0);
   }
 
   ngOnDestroy(): void {

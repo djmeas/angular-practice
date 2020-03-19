@@ -30,5 +30,6 @@ export class EmployeeComponent implements OnInit {
 
   ngOnInit(): void {
     this.store.dispatch(new GetEmployees());
+    window.scrollTo(0, 0);
   }
 }

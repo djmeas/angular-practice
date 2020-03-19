@@ -1,0 +1,9 @@
+<div class="employee-allocation">
+  <div
+    class="allocation scale-up"
+    *ngFor="let assignment of currentAssignments"
+    [style]="'flex:' + assignment.allocation"
+  >
+    <span class=""> {{ assignment.client }} {{ assignment.allocation }}% </span>
+  </div>
+</div>
