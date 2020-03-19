@@ -8,3 +8,48 @@
     text-decoration: initial;
   }
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+.scale-up {
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    background-color: #fff9f1;
+    box-shadow: 0px 3px 3px 0px #9aacbd;
+    cursor: pointer;
+  }
+}
+
+.card-body {
+  max-height: 500px;
+  min-height: 500px;
+  .header {
+    text-align: center;
+    font-size: 2em;
+  }
+  .subheader {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .employees {
+    text-align: center;
+    font-size: 2em;
+    .fa {
+      padding-right: 5px;
+    }
+  }
+}
+
+.category-image-container {
+  text-align: center;
+  padding: 20px 0;
+  min-height: 240px;
+  img {
+    width: 100%;
+    max-height: 200px;
+    max-width: 200px;
+  }
+}

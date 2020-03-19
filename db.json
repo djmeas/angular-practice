@@ -1,42 +1,4 @@
 {
-  "games": [
-    {
-      "id": 1,
-      "title": "Street Fighter II",
-      "category": ["Fighting", "Versus", "2-D"],
-      "players": "1-2"
-    },
-    {
-      "id": 2,
-      "title": "Sonic The Hedgehog",
-      "category": ["Platformer", "2-D"],
-      "players": "1"
-    },
-    {
-      "id": 3,
-      "title": "Beatmania IIDX",
-      "category": ["rhythm"],
-      "players": "1-2"
-    },
-    {
-      "id": 4,
-      "title": "Final Fantasy XII",
-      "category": ["JPRG", "3-D"],
-      "players": "1"
-    },
-    {
-      "id": 5,
-      "title": "Terraria",
-      "category": ["Sandbox", "2-D"],
-      "players": "1"
-    },
-    {
-      "id": 6,
-      "title": "Jackbox",
-      "category": ["Party", "Trivia", "Mini-games"],
-      "players": "1-8"
-    }
-  ],
   "employees": [
     {
       "id": 1,
@@ -83,7 +45,7 @@
           }
         },
         {
-          "name": "UI/UX",
+          "name": "UI-UX",
           "experience": {
             "years": 8,
             "level": 4
@@ -385,7 +347,7 @@
         },
 
         {
-          "name": "UI/UX",
+          "name": "UI-UX",
           "experience": {
             "years": 2,
             "level": 3
@@ -536,7 +498,7 @@
         },
 
         {
-          "name": "UI/UX",
+          "name": "UI-UX",
           "experience": {
             "years": 2,
             "level": 3
@@ -578,7 +540,7 @@
       },
       "skills": [
         {
-          "name": "UI/UX",
+          "name": "UI-UX",
           "experience": {
             "years": 4,
             "level": 4
@@ -661,7 +623,7 @@
           }
         },
         {
-          "name": "UI/UX",
+          "name": "UI-UX",
           "experience": {
             "years": 10,
             "level": 4
@@ -723,7 +685,7 @@
       },
       "skills": [
         {
-          "name": "UI/UX",
+          "name": "UI-UX",
           "experience": {
             "years": 4,
             "level": 4
@@ -808,7 +770,7 @@
     },
     {
       "id": 6,
-      "name": "UI/UX",
+      "name": "UI-UX",
       "category": "Design",
       "employeesWithSkill": 12
     },
@@ -832,7 +794,7 @@
     },
     {
       "id": 10,
-      "name": ".NET",
+      "name": "NET",
       "category": "Development",
       "employeesWithSkill": 19
     },
@@ -865,6 +827,13 @@
       "name": "Agile",
       "category": "Management",
       "employeesWithSkill": 25
+    }
+  ]
+  "projects": [
+    {
+      "id": 1,
+      "client": "Union Bank",
+      "name": ""
     }
   ]
 }

@@ -3,16 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClickerComponent } from './clicker/clicker.component';
-import { VideoGamesComponent } from './components/video-games/video-games.component';
 
 import { NgxsModule } from '@ngxs/store';
-import { VideoGameState } from './state/videoGame.state';
 import { EmployeeState } from './state//employee.state';
 import { SkillState } from './state/skill.state';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { VideoGameDetailComponent } from './components/video-game-detail/video-game-detail.component';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { EmployeeViewComponent } from './components/employee-view/employee-view.component';
 
@@ -29,9 +25,6 @@ import { EmployeeMiniCardComponent } from './components/employee-mini-card/emplo
 @NgModule({
   declarations: [
     AppComponent,
-    ClickerComponent,
-    VideoGamesComponent,
-    VideoGameDetailComponent,
     EmployeeComponent,
     EmployeeViewComponent,
     SkillsComponent,
@@ -44,7 +37,7 @@ import { EmployeeMiniCardComponent } from './components/employee-mini-card/emplo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxsModule.forRoot([VideoGameState, EmployeeState, SkillState]),
+    NgxsModule.forRoot([EmployeeState, SkillState]),
     HttpClientModule,
     ReactiveFormsModule,
     NgxChartsModule,

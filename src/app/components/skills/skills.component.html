@@ -1,31 +1,32 @@
-<div class="skill-table-container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Category</th>
-        <th>Employees with Skill</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let skill of skills$ | async">
-        <td>
-          <a [routerLink]="encodeURL(skill.name)">{{ skill.name }}</a>
-        </td>
-        <td>{{ skill.category }}</td>
-        <td>{{ skill.employeesWithSkill }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
 <div class="skill-card-container">
   <div class="row">
-    <div *ngFor="let skill of skills$ | async" class="col-lg-4">
-      <div class="card-body">
-        {{ skill.name }} -
-        {{ skill.category }}
-      </div>
+    <div *ngFor="let skill of skills$ | async" class="col-lg-3">
+      <a [routerLink]="encodeURL(skill.name)">
+        <div class="card-body scale-up">
+          <div class="header">
+            {{ skill.name }}
+          </div>
+
+          <br />
+          <div class="category-image-container">
+            <img
+              [src]="
+                '/assets/category_logos/' + skill.name.toLowerCase() + '.png'
+              "
+              alt=""
+            />
+          </div>
+          <hr />
+          <div class="subheader">
+            {{ skill.category }}
+          </div>
+          <hr />
+          <div class="employees">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            {{ skill.employeesWithSkill }}
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
