@@ -21,7 +21,7 @@ export class EmployeeViewComponent implements OnInit, OnDestroy {
   public view = '';
   public generateSkill = generateSkill;
 
-  // options
+  // TreeMap - Options
   // public gradient = false;
   // public animations = true;
   // public colorScheme = {

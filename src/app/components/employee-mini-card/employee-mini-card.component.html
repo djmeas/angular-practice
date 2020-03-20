@@ -1,4 +1,4 @@
-<div class="card-body scale-up">
+<div *ngIf="employee" class="card-body scale-up">
   <div class="employee-header">
     <h1>
       <a
@@ -62,6 +62,13 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="quick-action-container">
+    <div class="action" (click)="setQuickView()">Quick View</div>
+    <div class="action" (click)="setCompareEmployee()">
+      Compare
     </div>
   </div>
 </div>

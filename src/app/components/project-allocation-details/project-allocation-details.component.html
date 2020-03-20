@@ -1,0 +1,193 @@
+<div *ngIf="employee" class="employee-content">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card-body employee-sidebar scale-up">
+        <img
+          class="employee-image"
+          [src]="'assets/' + employee.details.profilePicture"
+          alt="Profile Image"
+        />
+        <div>
+          <h1 class="employee-name">
+            {{ employee.details.firstName }}
+            {{ employee.details.lastName }}
+          </h1>
+          <hr />
+        </div>
+        <div class="sub-header">
+          <div class="location">
+            {{ employee.details.address.city }},
+            {{ employee.details.address.state }}
+          </div>
+          <div class="role">
+            {{ employee.title }}
+          </div>
+        </div>
+
+        <hr />
+        <div class="employee-description">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed
+            mollis lorem. Nullam sagittis ut mauris ac blandit. Morbi massa
+            nulla, interdum sit amet sagittis vitae, sodales sed libero. Donec
+            diam mi, pellentesque ac leo sit amet, euismod sollicitudin tellus.
+            Nam euismod tincidunt arcu. Suspendisse ligula ligula, accumsan
+            vitae enim eu, gravida efficitur sapien. Sed vel velit vel mauris
+            mollis elementum.
+          </p>
+          <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Sed hendrerit scelerisque ante, non
+            ullamcorper purus vehicula eu. Sed lacinia erat a velit aliquet,
+            dignissim rhoncus sem mattis. Pellentesque varius purus ut leo
+            feugiat, id maximus enim ultricies. Fusce suscipit nulla laoreet
+            tortor ultrices tincidunt. In in egestas lacus.
+          </p>
+          <hr />
+          <div class="contact-icons">
+            <div class="icon">
+              <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; Phone
+            </div>
+            <div class="icon">
+              <i class="fa fa-envelope-open-o" aria-hidden="true"></i> &nbsp;
+              E-Mail
+            </div>
+            <div class="icon">
+              <i class="fa fa-comment-o" aria-hidden="true"></i> Message
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="card-body scale-up">
+        <h1>Project Allocation</h1>
+        <hr />
+        <div class="assignment">
+          <app-project-allocation-bar
+            [currentAssignments]="employee.assignments.current"
+          ></app-project-allocation-bar>
+          <hr />
+          <div
+            class="assignment-details"
+            *ngFor="let assignment of employee.assignments.current"
+          >
+            <div class="project-details">
+              <div class="name">
+                <i class="fa fa-circle" aria-hidden="true"></i>&nbsp;
+                <b>
+                  {{ assignment.project }} &mdash;
+                  {{ assignment.client }}
+                </b>
+              </div>
+              <div class="start-end">
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;
+                {{ assignment.start | date }} &mdash;
+                {{ assignment.end | date }}
+              </div>
+            </div>
+
+            <div class="roles">
+              <b>Roles:</b> {{ assignment.details.roles.join(', ') }}
+            </div>
+            <p>
+              Phasellus bibendum arcu molestie justo aliquet. Ut hendrerit massa
+              dapibus. Ut elit lacus, dapibus sit amet ligula in, pharetra
+              mollis ante. Phasellus bibendum arcu molestie justo aliquet.
+            </p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="card-body scale-up">
+        <h1>Expertise</h1>
+        <hr />
+        <div class="skills-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th style="width: 15%">Skill</th>
+                <th class="text-center" style="width: 25%">Years</th>
+                <th>Level</th>
+              </tr>
+            </thead>
+            <tbody class="skill-detail">
+              <tr *ngFor="let skill of employee.skills">
+                <td>{{ skill.name }}</td>
+                <td class="text-center">
+                  {{
+                    skill.experience.years >= 1 ? skill.experience.years : '< 1'
+                  }}
+                </td>
+                <td class="skill-gauge">
+                  <div
+                    class="gauge"
+                    [ngClass]="
+                      generateSkill(skill.experience.level).toLowerCase()
+                    "
+                    [title]="skill.experience.years + ' years experience'"
+                  >
+                    {{ skill.experience.level | skillText }}
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="card-body scale-up project-history-container">
+        <h1>Project History</h1>
+        <hr />
+        <div *ngFor="let history of employee.assignments.history">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>
+                {{ history.project }}
+              </h2>
+              <h3>
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                {{ history.client }}
+              </h3>
+              <div class="role">
+                {{ history.details.role }}
+              </div>
+              <div class="start-end">
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                {{ history.start | date }} - {{ history.end | date }}
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                [src]="'/assets/client_logos/' + history.clientImage"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-12 project-description">
+              <p>
+                Integer lacinia non dolor at elementum. In ipsum elit, consequat
+                a tempor a, dignissim non enim. Mauris porttitor purus
+                efficitur, iaculis ligula et, congue neque. Pellentesque
+                aliquet, quam sit amet ullamcorper eleifend, metus augue lacinia
+                lacus, quis lobortis est nunc at erat. Nulla aliquet rhoncus
+                malesuada. Vivamus bibendum in ipsum posuere rutrum. Nulla purus
+                lectus, molestie in tortor vel, laoreet pharetra est.
+              </p>
+              <p>
+                Phasellus bibendum arcu molestie justo aliquet, ut hendrerit
+                massa dapibus. Ut elit lacus, dapibus sit amet ligula in,
+                pharetra mollis ante.
+              </p>
+            </div>
+            <div class="col-lg-12">
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

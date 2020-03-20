@@ -24,6 +24,8 @@ import { EmployeeMiniCardComponent } from './components/employee-mini-card/emplo
 import { ProjectAllocationBarComponent } from './components/project-allocation-bar/project-allocation-bar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { HomeComponent } from './components/home/home.component';
+import { InfoSidebarComponent } from './components/info-sidebar/info-sidebar.component';
+import { ProjectAllocationDetailsComponent } from './components/project-allocation-details/project-allocation-details.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { HomeComponent } from './components/home/home.component';
     EmployeeMiniCardComponent,
     ProjectAllocationBarComponent,
     ProjectsComponent,
-    HomeComponent
+    HomeComponent,
+    InfoSidebarComponent,
+    ProjectAllocationDetailsComponent
   ],
   imports: [
     BrowserModule,

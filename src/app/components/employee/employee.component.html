@@ -8,20 +8,34 @@
 
 <div class="row">
   <div *ngFor="let employee of employees | async" class="col-lg-4">
-    <app-employee-mini-card [employee]="employee"></app-employee-mini-card>
+    <app-employee-mini-card
+      (compareEmployee)="compareEmployee($event)"
+      (quickView)="quickView($event)"
+      [employee]="employee"
+    ></app-employee-mini-card>
   </div>
 
-  <!-- Extra Instances to fill up page -->
   <div *ngFor="let employee of employees | async" class="col-lg-4">
-    <app-employee-mini-card [employee]="employee"></app-employee-mini-card>
+    <app-employee-mini-card
+      (compareEmployee)="compareEmployee($event)"
+      (quickView)="quickView($event)"
+      [employee]="employee"
+    ></app-employee-mini-card>
   </div>
   <div *ngFor="let employee of employees | async" class="col-lg-4">
-    <app-employee-mini-card [employee]="employee"></app-employee-mini-card>
-  </div>
-  <div *ngFor="let employee of employees | async" class="col-lg-4">
-    <app-employee-mini-card [employee]="employee"></app-employee-mini-card>
-  </div>
-  <div *ngFor="let employee of employees | async" class="col-lg-4">
-    <app-employee-mini-card [employee]="employee"></app-employee-mini-card>
+    <app-employee-mini-card
+      (compareEmployee)="compareEmployee($event)"
+      (quickView)="quickView($event)"
+      [employee]="employee"
+    ></app-employee-mini-card>
   </div>
 </div>
+
+<app-info-sidebar [displayInfoBar]="displayInfoSidebar">
+  <button class="btn btn-close" (click)="displayInfoSidebar = false">
+    <i class="fa fa-times" aria-hidden="true"></i> Close
+  </button>
+  <app-project-allocation-details
+    [employee]="employeeQuickView"
+  ></app-project-allocation-details>
+</app-info-sidebar>
