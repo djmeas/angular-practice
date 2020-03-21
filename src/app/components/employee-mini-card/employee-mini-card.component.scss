@@ -186,9 +186,14 @@
     text-align: center;
     border: 1px solid lightgray;
     background: #e8e8f4;
+
     &:hover {
       background-color: white;
       cursor: pointer;
+    }
+    &.selected {
+      background-color: $oaOrange;
+      color: white;
     }
     &:first-child {
       border-top-left-radius: 5px;

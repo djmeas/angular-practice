@@ -67,7 +67,11 @@
 
   <div class="quick-action-container">
     <div class="action" (click)="setQuickView()">Quick View</div>
-    <div class="action" (click)="setCompareEmployee()">
+    <div
+      class="action"
+      [ngClass]="{ selected: isSelected }"
+      (click)="setCompareEmployee()"
+    >
       Compare
     </div>
   </div>

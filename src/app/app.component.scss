@@ -17,13 +17,16 @@ body {
       background-color: #bfc0cb;
       height: 100%;
       a {
-        font-size: 1.75em;
+        font-size: 1.35em;
         color: white;
         text-decoration: none;
         .sidebar-link {
           padding: 10px 20px;
           transition: 0.3s;
           border-bottom: 1px solid white;
+          .fa {
+            padding-right: 10px;
+          }
           &.logo {
             background-color: white;
             display: flex;

@@ -17,16 +17,19 @@ import { Employee } from 'src/app/model/employee.model';
   styleUrls: ['./employee-mini-card.component.scss']
 })
 export class EmployeeMiniCardComponent implements OnInit {
-  @Input() employee: any;
+  @Input() employee: any = null;
   @Output() compareEmployee = new EventEmitter();
   @Output() quickView = new EventEmitter();
 
   public generateSkill = generateSkill;
 
+  public isSelected = false;
+
   constructor() {}
 
   public setCompareEmployee(): void {
     this.compareEmployee.emit(this.employee);
+    this.isSelected = !this.isSelected;
   }
 
   public setQuickView(): void {
