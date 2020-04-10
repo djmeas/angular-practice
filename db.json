@@ -1,6 +1,127 @@
 {
   "employees": [
     {
+      "id": 1,
+      "title": "Front End Developer",
+      "details": {
+        "firstName": "Chet",
+        "lastName": "Ly",
+        "address": {
+          "street1": "3456 East Bank Ave",
+          "street2": "Apt 499",
+          "city": "Signal Hill",
+          "state": "CA",
+          "postalCode": 90876
+        },
+        "profilePicture": "chet.jpg"
+      },
+      "skills": [
+        {
+          "name": "Angular",
+          "experience": {
+            "years": 5,
+            "level": 5
+          }
+        },
+        {
+          "name": "JavaScript",
+          "experience": {
+            "years": 10,
+            "level": 5
+          }
+        },
+        {
+          "name": "SQL",
+          "experience": {
+            "years": 3,
+            "level": 3
+          }
+        },
+        {
+          "name": "HTML",
+          "experience": {
+            "years": 11,
+            "level": 5
+          }
+        },
+        {
+          "name": "CSS",
+          "experience": {
+            "years": 11,
+            "level": 5
+          }
+        },
+        {
+          "name": "PHP",
+          "experience": {
+            "years": 2,
+            "level": 2
+          }
+        },
+        {
+          "name": "Java",
+          "experience": {
+            "years": 0.5,
+            "level": 2
+          }
+        }
+      ],
+      "assignments": {
+        "current": [
+          {
+            "client": "NBCU",
+            "project": "Peacock",
+            "assigned": "2019-12-21",
+            "start": "2019-12-28",
+            "end": "2020-06-12",
+            "allocation": 100,
+            "details": {
+              "roles": ["Front End Developer"],
+              "description": ""
+            }
+          }
+        ],
+        "history": [
+          {
+            "client": "Union Bank",
+            "clientImage": "union_bank.svg",
+            "project": "CSX R3",
+            "assigned": "2017-04-24",
+            "start": "2017-04-25",
+            "end": "2017-06-15",
+            "details": {
+              "role": "Front End Developer",
+              "description": ""
+            }
+          },
+          {
+            "client": "Disney",
+            "clientImage": "disney.png",
+            "project": "Stitch",
+            "assigned": "2017-06-20",
+            "start": "2017-06-22",
+            "end": "2018-1-12",
+            "details": {
+              "role": "Front End Developer",
+              "description": ""
+            }
+          },
+          {
+            "client": "Acura",
+            "clientImage": "acura.png",
+            "project": "Dealership Portal",
+            "assigned": "2017-06-30",
+            "start": "2017-07-03",
+            "end": "2017-8-16",
+            "details": {
+              "role": "Front End Developer",
+              "description": ""
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": 2,
       "title": "Front End Developer",
       "details": {
@@ -642,6 +763,496 @@
       "name": "Agile",
       "category": "Management",
       "employeesWithSkill": 25
+    }
+  ],
+  "forecast": [
+    {
+      "employee": {
+        "id": 2,
+        "title": "Front End Developer",
+        "details": {
+          "firstName": "Harry",
+          "lastName": "Meas",
+          "address": {
+            "street1": "3456 East Bank Ave",
+            "street2": "Apt 499",
+            "city": "Signal Hill",
+            "state": "CA",
+            "postalCode": 90876
+          },
+          "profilePicture": "harrym.jpg"
+        },
+        "skills": [
+          {
+            "name": "Angular",
+            "experience": {
+              "years": 0.5,
+              "level": 3
+            }
+          },
+          {
+            "name": "JavaScript",
+            "experience": {
+              "years": 3,
+              "level": 4
+            }
+          },
+          {
+            "name": "SQL",
+            "experience": {
+              "years": 5,
+              "level": 4
+            }
+          },
+          {
+            "name": "HTML",
+            "experience": {
+              "years": 6,
+              "level": 5
+            }
+          },
+          {
+            "name": "CSS",
+            "experience": {
+              "years": 6,
+              "level": 5
+            }
+          },
+          {
+            "name": "PHP",
+            "experience": {
+              "years": 5,
+              "level": 5
+            }
+          },
+
+          {
+            "name": "Java",
+            "experience": {
+              "years": 0.5,
+              "level": 2
+            }
+          }
+        ],
+        "assignments": {
+          "current": [
+            {
+              "client": "Union Bank",
+              "project": "CSX R3",
+              "assigned": "2019-11-15",
+              "start": "2019-11-26",
+              "end": "2020-03-30",
+              "allocation": 20,
+              "details": {
+                "roles": ["Front End Developer"],
+                "description": ""
+              }
+            },
+            {
+              "client": "Blue Shield",
+              "project": "FEP Blue",
+              "assigned": "2020-03-09",
+              "start": "2020-03-10",
+              "end": "2020-10-18",
+              "allocation": 80,
+              "details": {
+                "roles": ["Front End Developer", "Back End Developer"],
+                "description": ""
+              }
+            }
+          ],
+          "history": [
+            {
+              "client": "Union Bank",
+              "clientImage": "union_bank.svg",
+              "project": "CSX R3",
+              "assigned": "2017-04-24",
+              "start": "2017-04-25",
+              "end": "2017-06-15",
+              "details": {
+                "role": "Front End Developer",
+                "description": ""
+              }
+            },
+            {
+              "client": "Disney",
+              "clientImage": "disney.png",
+              "project": "Stitch",
+              "assigned": "2017-06-20",
+              "start": "2017-06-22",
+              "end": "2018-1-12",
+              "details": {
+                "role": "Front End Developer",
+                "description": ""
+              }
+            },
+            {
+              "client": "Acura",
+              "clientImage": "acura.png",
+              "project": "Dealership Portal",
+              "assigned": "2017-06-30",
+              "start": "2017-07-03",
+              "end": "2017-8-16",
+              "details": {
+                "role": "Front End Developer",
+                "description": ""
+              }
+            }
+          ]
+        }
+      },
+      "allocation": {
+        "current": [
+          {
+            "client": "Union Bank",
+            "project": "CSX R3",
+            "assigned": "2019-11-15",
+            "start": "2019-11-26",
+            "end": "2020-03-30",
+            "allocation": 20,
+            "details": {
+              "roles": ["Front End Developer"],
+              "description": ""
+            }
+          },
+          {
+            "client": "Blue Shield",
+            "project": "FEP Blue",
+            "assigned": "2020-03-09",
+            "start": "2020-03-10",
+            "end": "2020-10-18",
+            "allocation": 80,
+            "details": {
+              "roles": ["Front End Developer", "Back End Developer"],
+              "description": ""
+            }
+          }
+        ],
+        "queue": [
+          {
+            "client": "Union Bank",
+            "project": "CSX R4",
+            "assigned": "2020-03-15",
+            "start": "2020-05-01",
+            "end": "2020-08-18",
+            "allocation": 100,
+            "details": {
+              "roles": ["Front End Developer"],
+              "description": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "employee": {
+        "id": 3,
+        "title": "Back End Developer",
+        "details": {
+          "firstName": "Mohammad",
+          "lastName": "Yazdani",
+          "address": {
+            "street1": "3456 East Bank Ave",
+            "street2": "Apt 499",
+            "city": "Signal Hill",
+            "state": "CA",
+            "postalCode": 90876
+          },
+          "profilePicture": "mohammad.jpg"
+        },
+        "skills": [
+          {
+            "name": "Java",
+            "experience": {
+              "years": 15,
+              "level": 5
+            }
+          },
+          {
+            "name": "ML",
+            "experience": {
+              "years": 1,
+              "level": 5
+            }
+          },
+          {
+            "name": "SQL",
+            "experience": {
+              "years": 15,
+              "level": 5
+            }
+          },
+          {
+            "name": "Angular",
+            "experience": {
+              "years": 0.25,
+              "level": 2
+            }
+          },
+          {
+            "name": "JavaScript",
+            "experience": {
+              "years": 1,
+              "level": 2
+            }
+          },
+
+          {
+            "name": "HTML",
+            "experience": {
+              "years": 3,
+              "level": 3
+            }
+          }
+        ],
+        "assignments": {
+          "current": [
+            {
+              "client": "Union Bank",
+              "project": "CSX R3",
+              "assigned": "2019-11-15",
+              "start": "2019-11-26",
+              "end": "2020-03-30",
+              "allocation": 50,
+              "details": {
+                "roles": ["Back End Developer"],
+                "description": ""
+              }
+            },
+            {
+              "client": "USAA",
+              "project": "Avvid",
+              "assigned": "2020-03-09",
+              "start": "2020-03-10",
+              "end": "2020-10-18",
+              "allocation": 50,
+              "details": {
+                "roles": ["Back End Developer"],
+                "description": ""
+              }
+            }
+          ],
+          "history": [
+            {
+              "client": "Union Bank",
+              "clientImage": "union_bank.svg",
+              "project": "CSX R3",
+              "assigned": "2017-04-24",
+              "start": "2017-04-25",
+              "end": "2017-06-15",
+              "details": {
+                "role": "Front End Developer",
+                "description": ""
+              }
+            },
+            {
+              "client": "Disney",
+              "clientImage": "disney.png",
+              "project": "Stitch",
+              "assigned": "2017-06-20",
+              "start": "2017-06-22",
+              "end": "2018-1-12",
+              "details": {
+                "role": "Front End Developer",
+                "description": ""
+              }
+            },
+            {
+              "client": "Acura",
+              "clientImage": "acura.png",
+              "project": "Dealership Portal",
+              "assigned": "2017-06-30",
+              "start": "2017-07-03",
+              "end": "2017-8-16",
+              "details": {
+                "role": "Front End Developer",
+                "description": ""
+              }
+            }
+          ]
+        }
+      },
+      "allocation": {
+        "current": [
+          {
+            "client": "Union Bank",
+            "project": "CSX R3",
+            "assigned": "2019-11-15",
+            "start": "2019-11-26",
+            "end": "2020-03-30",
+            "allocation": 50,
+            "details": {
+              "roles": ["Back End Developer"],
+              "description": ""
+            }
+          },
+          {
+            "client": "USAA",
+            "project": "Avvid",
+            "assigned": "2020-03-09",
+            "start": "2020-03-27",
+            "end": "2020-10-18",
+            "allocation": 50,
+            "details": {
+              "roles": ["Back End Developer"],
+              "description": ""
+            }
+          }
+        ],
+        "queue": []
+      }
+    },
+    {
+      "employee": {
+        "id": 1,
+        "title": "Front End Developer",
+        "details": {
+          "firstName": "Chet",
+          "lastName": "Ly",
+          "address": {
+            "street1": "3456 East Bank Ave",
+            "street2": "Apt 499",
+            "city": "Signal Hill",
+            "state": "CA",
+            "postalCode": 90876
+          },
+          "profilePicture": "chet.jpg"
+        },
+        "skills": [
+          {
+            "name": "Angular",
+            "experience": {
+              "years": 5,
+              "level": 5
+            }
+          },
+          {
+            "name": "JavaScript",
+            "experience": {
+              "years": 10,
+              "level": 5
+            }
+          },
+          {
+            "name": "SQL",
+            "experience": {
+              "years": 3,
+              "level": 3
+            }
+          },
+          {
+            "name": "HTML",
+            "experience": {
+              "years": 11,
+              "level": 5
+            }
+          },
+          {
+            "name": "CSS",
+            "experience": {
+              "years": 11,
+              "level": 5
+            }
+          },
+          {
+            "name": "PHP",
+            "experience": {
+              "years": 2,
+              "level": 2
+            }
+          },
+          {
+            "name": "Java",
+            "experience": {
+              "years": 0.5,
+              "level": 2
+            }
+          }
+        ],
+        "assignments": {
+          "current": [
+            {
+              "client": "Union Bank",
+              "project": "CSX R3",
+              "assigned": "2019-11-15",
+              "start": "2019-11-26",
+              "end": "2020-03-30",
+              "allocation": 20,
+              "details": {
+                "roles": ["Front End Developer"],
+                "description": ""
+              }
+            },
+            {
+              "client": "Blue Shield",
+              "project": "FEP Blue",
+              "assigned": "2020-03-09",
+              "start": "2020-03-10",
+              "end": "2020-10-18",
+              "allocation": 80,
+              "details": {
+                "roles": ["Front End Developer", "Back End Developer"],
+                "description": ""
+              }
+            }
+          ],
+          "history": [
+            {
+              "client": "Union Bank",
+              "clientImage": "union_bank.svg",
+              "project": "CSX R3",
+              "assigned": "2017-04-24",
+              "start": "2017-04-25",
+              "end": "2017-06-15",
+              "details": {
+                "role": "Front End Developer",
+                "description": ""
+              }
+            },
+            {
+              "client": "Disney",
+              "clientImage": "disney.png",
+              "project": "Stitch",
+              "assigned": "2017-06-20",
+              "start": "2017-06-22",
+              "end": "2018-1-12",
+              "details": {
+                "role": "Front End Developer",
+                "description": ""
+              }
+            },
+            {
+              "client": "Acura",
+              "clientImage": "acura.png",
+              "project": "Dealership Portal",
+              "assigned": "2017-06-30",
+              "start": "2017-07-03",
+              "end": "2017-8-16",
+              "details": {
+                "role": "Front End Developer",
+                "description": ""
+              }
+            }
+          ]
+        }
+      },
+      "allocation": {
+        "current": [
+          {
+            "client": "NBCU",
+            "project": "Peacock",
+            "assigned": "2019-12-21",
+            "start": "2019-12-28",
+            "end": "2020-06-12",
+            "allocation": 100,
+            "details": {
+              "roles": ["Front End Developer"],
+              "description": ""
+            }
+          }
+        ],
+        "queue": []
+      }
     }
   ]
 }
