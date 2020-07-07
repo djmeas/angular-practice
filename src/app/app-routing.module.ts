@@ -10,32 +10,37 @@ import { HomeComponent } from './components/home/home.component';
 const routes: Routes = [
   {
     path: 'employees',
-    component: EmployeeComponent
+    component: EmployeeComponent,
   },
   {
     path: 'employees/:id',
-    component: EmployeeViewComponent
+    component: EmployeeViewComponent,
   },
   {
     path: 'skills',
-    component: SkillsComponent
+    component: SkillsComponent,
   },
   {
     path: 'skills/:id',
-    component: SkillViewComponent
+    component: SkillViewComponent,
   },
   {
     path: 'projects',
-    component: ProjectsComponent
+    component: ProjectsComponent,
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    component: HomeComponent
-  }
+    component: HomeComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
